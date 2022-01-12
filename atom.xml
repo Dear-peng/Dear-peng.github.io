@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>peng的博客</title>
+  
+  <subtitle>be yourself, be better</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-01-12T03:21:04.440Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>peng</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网页性能管理</title>
+    <link href="http://example.com/2022/011224686.html"/>
+    <id>http://example.com/2022/011224686.html</id>
+    <published>2022-01-12T03:19:29.000Z</published>
+    <updated>2022-01-12T03:21:04.440Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;网页性能管理&quot;&gt;&lt;a href=&quot;#网页性能管理&quot; class=&quot;headerlink&quot; title=&quot;网页性能管理&quot;&gt;&lt;/a&gt;网页性能管理&lt;/h1&gt;&lt;h2 id=&quot;一、必要性&quot;&gt;&lt;a href=&quot;#一、必要性&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2022/011216107.html"/>
+    <id>http://example.com/2022/011216107.html</id>
+    <published>2022-01-12T03:10:08.594Z</published>
+    <updated>1985-10-26T08:15:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
