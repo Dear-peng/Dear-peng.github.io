@@ -529,6 +529,12 @@ header .go-back i {
 }
 
 /* 背景图效果. */
+/* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色. */
+.bg-color {
+    /**background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);**/
+}
+
+
 .bg-cover {
     position: relative;
     display: flex;
@@ -537,6 +543,7 @@ header .go-back i {
     padding: 0;
     border: 0;
     overflow: hidden;
+    background-image: linear-gradient(to right, #7371BC 0%, #284D95 100%);
     background-position: center center;
     background-size: cover;
     transform: translate3d(0px, 0px, 0px);
