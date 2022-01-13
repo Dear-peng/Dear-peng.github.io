@@ -469,15 +469,15 @@
 
 
     <script>
-        // // 每天切换 banner 图.  Switch banner image every day.
-        // var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-        // $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+        // 每天切换 banner 图.  Switch banner image every day.
+        var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+        $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 
-        setInterval(()=>{
-            var now = Math.floor(Math.random()* 13+10)
-            var bannerUrl = "/medias/banner/" + now + '.jpg';
-            $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-        },5000)
+        // setInterval(()=>{
+        //     var now = Math.floor(Math.random()* 13+10)
+        //     var bannerUrl = "/medias/banner/" + now + '.jpg';
+        //     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+        // },5000)
     </script>
     
     </div>
