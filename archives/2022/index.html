@@ -689,27 +689,7 @@
             </div>
         
     </div> -->
-
-
-    <div class="container">
-        <div class="card">
-           <div class="card-content">
-              <div class="tag-chips">
-                 <span onclick="showTable()" id="sp-table" class="chip center-align                                     waves-effect waves-light default"
-                       data-tagname="时间列表"
-                       style="background: linear-gradient(to right, rgb(76, 191,                                 48) 0%, rgb(15, 157, 88) 100%); color: rgb(255, 255, 255);">时间列表
-                 </span>
-                 <span onclick="showTime()" id="sp-timeline"
-                       class="chip center-align waves-effect waves-light default"
-                       data-tagname="时间轴"
-                       style="background: rgb(249, 235, 234); color: rgba(0, 0, 0,                                                                 0.6);">时间轴
-                 </span>
-              </div>
-           </div>
-        </div>
-     </div>
-
-     <script>
+    <script>
         function showTime() {
         $("#cd-timeline").show();
         $("#cd-table").hide();
@@ -730,6 +710,26 @@
         $("#sp-timeline").css('color', 'rgba(0,0,0,0.6)');
      }
      </script>
+
+    <div class="container">
+        <div class="card">
+           <div class="card-content">
+              <div class="tag-chips">
+                 <span onclick="showTable()" id="sp-table" class="chip center-align                                     waves-effect waves-light default"
+                       data-tagname="时间列表"
+                       style="background: linear-gradient(to right, rgb(76, 191,                                 48) 0%, rgb(15, 157, 88) 100%); color: rgb(255, 255, 255);">时间列表
+                 </span>
+                 <span onclick="showTime()" id="sp-timeline"
+                       class="chip center-align waves-effect waves-light default"
+                       data-tagname="时间轴"
+                       style="background: rgb(249, 235, 234); color: rgba(0, 0, 0,                                                                 0.6);">时间轴
+                 </span>
+              </div>
+           </div>
+        </div>
+     </div>
+
+
 
 <div id="cd-table" class="container archive-container">
     
