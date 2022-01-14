@@ -29,10 +29,10 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="peng的博客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="peng的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</head>
 
 
 
@@ -572,169 +572,17 @@
 
     
 
-    <!-- 时间轴区域块
-    <div id="cd-timeline" class="container" style="display: none;">
-        
-            <div class="cd-timeline-block">
-
-                
-                
-                    
-                    <div class="cd-timeline-img year" data-aos="zoom-in-up">
-                        <a href="/archives/2022">2022</a>
-                    </div>
-                
-
-                
-                
-                    
-                    <div class="cd-timeline-img month" data-aos="zoom-in-up">
-                        <a href="/archives/2022/01">
-                           01</a>
-                    </div>
-                
-
-                
-                <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                    <span>12</span>
-                </div>
-                <article class="cd-timeline-content" data-aos="fade-up">
-                    <div class="article col s12 m6">
-                        <div class="card">
-                            <a href="/2022/011224686.html">
-                                <div class="card-image">
-                                    
-                                        
-                                     <img src="
-                                                  /medias/featureimages/9.jpg"
-                                      class="responsive-img" alt="网页性能管理">
-                                    
-                                    <span class="card-title">网页性能管理
-                                       </span>
-                                </div>
-                            </a>
-                            <div class="card-content article-content">
-                                <div class="summary block-with-text">
-                                    
-                                        网页性能管理一、必要性 如果一个网页响应非常缓慢，占用大量的CPU和内存，浏览起来常常有卡顿，页面的动画效果也不流畅。对于用户：会关闭这个页面，改为访问其他网站。所以作为一个开发者，肯定不愿意看到这种情况，必须要提高性能。
-1.目的提高网页
-                                    
-                                </div>
-                                <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>
-                                   2022-01-12
-                                </span>
-                                    <span class="publish-author">
-                                        
-                                            <i class="fas fa-user fa-fw"></i>
-                                            peng
-                                        
-                                    </span>
-                                </div>
-                            </div>
-
-                            
-                                <div class="card-action article-tags">
-                                    
-                                        <a href="/tags/%E6%80%A7%E8%83%BD%E7%AE%A1%E7%90%86/">
-                                           <span
-                                                    class="chip bg-color">
-                                              性能管理</span></a>
-                                    
-                                </div>
-                            
-                        </div>
-                    </div>
-                </article>
-            </div>
-        
-            <div class="cd-timeline-block">
-
-                
-                
-
-                
-                
-
-                
-                <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                    <span>12</span>
-                </div>
-                <article class="cd-timeline-content" data-aos="fade-up">
-                    <div class="article col s12 m6">
-                        <div class="card">
-                            <a href="/2022/011216107.html">
-                                <div class="card-image">
-                                    
-                                        
-                                     <img src="
-                                                  /medias/featureimages/12.jpg"
-                                      class="responsive-img" alt="Hello World">
-                                    
-                                    <span class="card-title">Hello World
-                                       </span>
-                                </div>
-                            </a>
-                            <div class="card-content article-content">
-                                <div class="summary block-with-text">
-                                    
-                                        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                                    
-                                </div>
-                                <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>
-                                   2022-01-12
-                                </span>
-                                    <span class="publish-author">
-                                        
-                                            <i class="fas fa-user fa-fw"></i>
-                                            peng
-                                        
-                                    </span>
-                                </div>
-                            </div>
-
-                            
-                        </div>
-                    </div>
-                </article>
-            </div>
-        
-    </div> -->
-    <script>
-        function showTime() {
-        $("#cd-timeline").show();
-        $("#cd-table").hide();
-        $("#sp-timeline").css('background', 'linear-gradient(to right, #4cbf30 0%, 
-                              #0f9d58 100%)');
-        $("#sp-timeline").css('color', '#fff');
-        $("#sp-table").css('background', '#F9EBEA')
-        $("#sp-table").css('color', 'rgba(0,0,0,0.6)');
-     }
-     
-     function showTable() {
-        $("#cd-timeline").hide();
-        $("#cd-table").show();
-        $("#sp-table").css('background', 'linear-gradient(to right, #4cbf30 0%, 
-                           #0f9d58 100%)');
-        $("#sp-table").css('color', '#fff');
-        $("#sp-timeline").css('background', '#F9EBEA')
-        $("#sp-timeline").css('color', 'rgba(0,0,0,0.6)');
-     }
-     </script>
-
+    
     <div class="container">
         <div class="card">
            <div class="card-content">
               <div class="tag-chips">
-                 <span onclick="showTable()" id="sp-table" class="chip center-align                                     waves-effect waves-light default"
+                 <span id="sp-table" class="chip center-align                                     waves-effect waves-light default "
                        data-tagname="时间列表"
                        style="background: linear-gradient(to right, rgb(76, 191,                                 48) 0%, rgb(15, 157, 88) 100%); color: rgb(255, 255, 255);">时间列表
                  </span>
-                 <span onclick="showTime()" id="sp-timeline"
-                       class="chip center-align waves-effect waves-light default"
+                 <span  id="sp-timeline"
+                       class="chip center-align waves-effect waves-light default "
                        data-tagname="时间轴"
                        style="background: rgb(249, 235, 234); color: rgba(0, 0, 0,                                                                 0.6);">时间轴
                  </span>
@@ -742,82 +590,242 @@
            </div>
         </div>
      </div>
-
-
-
-<div id="cd-table" class="container archive-container">
+     
     
-        <div class="card">
-            <div class="card-content">
-                <div class="archive">
-                    
-                    
+     
+     <div id="cd-table" class="container archive-container">
+        
+            <div class="card">
+                <div class="card-content">
+                    <div class="archive">
+                        
+                        
+                            
+                            <h4 class="archive-year" id="2022">2022年
+                            </h4>
+                        
 
-                    <div class="articles">
-                        <div class="article content>">
-                            <div class="article-sort-post">
-                                <div class="article-sort-item_title">
-                                    <a href="/2022/011224686.html">
-                                    <h5>
-                                    <i class="fa fa-clock" 
-                                      style="font-size: 1rem;cursor: pointer;">                                                         </i>
-                                     <time class="is-text-small"                                                                             datetime="2021-08-20T20:20:00.000Z"
-                                     itemprop="datePublished" style="color:                                                                 #ff542d;">
-                                      2022-01-12
-                                       </time>
-                                        </h5>
-                                    </a>
-                                    <h6 class="is-6">
-                                        <a href="/2022/011224686.html"></a>
+                        <div class="articles">
+                            <div class="article content>">
+                                <div class="article-sort-post">
+                                    <div class="article-sort-item_title">
                                         <a href="/2022/011224686.html">
-                                           网页性能管理</a>
-                                    </h6>
+                                        <h5>
+                                        <i class="fa fa-clock" 
+                                          style="font-size: 1rem;cursor: pointer;">                                                         </i>
+                                         <time class="is-text-small"                                                                             datetime="2021-08-20T20:20:00.000Z"
+                                         itemprop="datePublished" style="color:                                                                 #ff542d;">
+                                          2022-01-12
+                                           </time>
+                                            </h5>
+                                        </a>
+                                        <h6 class="is-6">
+                                            <a href="/2022/011224686.html"></a>
+                                            <a href="/2022/011224686.html">
+                                               网页性能管理</a>
+                                        </h6>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="card">
-            <div class="card-content">
-                <div class="archive">
-                    
-                    
+        
+            <div class="card">
+                <div class="card-content">
+                    <div class="archive">
+                        
+                        
 
-                    <div class="articles">
-                        <div class="article content>">
-                            <div class="article-sort-post">
-                                <div class="article-sort-item_title">
-                                    <a href="/2022/011216107.html">
-                                    <h5>
-                                    <i class="fa fa-clock" 
-                                      style="font-size: 1rem;cursor: pointer;">                                                         </i>
-                                     <time class="is-text-small"                                                                             datetime="2021-08-20T20:20:00.000Z"
-                                     itemprop="datePublished" style="color:                                                                 #ff542d;">
-                                      2022-01-12
-                                       </time>
-                                        </h5>
-                                    </a>
-                                    <h6 class="is-6">
-                                        <a href="/2022/011216107.html"></a>
+                        <div class="articles">
+                            <div class="article content>">
+                                <div class="article-sort-post">
+                                    <div class="article-sort-item_title">
                                         <a href="/2022/011216107.html">
-                                           Hello World</a>
-                                    </h6>
+                                        <h5>
+                                        <i class="fa fa-clock" 
+                                          style="font-size: 1rem;cursor: pointer;">                                                         </i>
+                                         <time class="is-text-small"                                                                             datetime="2021-08-20T20:20:00.000Z"
+                                         itemprop="datePublished" style="color:                                                                 #ff542d;">
+                                          2022-01-12
+                                           </time>
+                                            </h5>
+                                        </a>
+                                        <h6 class="is-6">
+                                            <a href="/2022/011216107.html"></a>
+                                            <a href="/2022/011216107.html">
+                                               Hello World</a>
+                                        </h6>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
+        
+</div>
+<div id="cd-timeline" class="container" style="display: none;">
+    
+    <div class="cd-timeline-block">
+
+        
+        
+
+        
+        
+        
+        <div class="cd-timeline-img month" data-aos="zoom-in-up">
+            <a href="/archives/2022/01">01</a>
         </div>
+        
+
+        
+        <div class="cd-timeline-img day" data-aos="zoom-in-up">
+            <span>12</span>
+        </div>
+        <article class="cd-timeline-content" data-aos="fade-up">
+            <div class="article col s12 m6">
+                <div class="card">
+                    <a href="/2022/011224686.html">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="网页性能管理">
+                            
+                            <span class="card-title">网页性能管理</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                网页性能管理一、必要性 如果一个网页响应非常缓慢，占用大量的CPU和内存，浏览起来常常有卡顿，页面的动画效果也不流畅。对于用户：会关闭这个页面，改为访问其他网站。所以作为一个开发者，肯定不愿意看到这种情况，必须要提高性能。
+1.目的提高网页
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-12
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                peng
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%80%A7%E8%83%BD%E7%AE%A1%E7%90%86/"><span class="chip bg-color">性能管理</span></a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </article>
+    </div>
+    
+    <div class="cd-timeline-block">
+
+        
+        
+
+        
+        
+
+        
+        <div class="cd-timeline-img day" data-aos="zoom-in-up">
+            <span>12</span>
+        </div>
+        <article class="cd-timeline-content" data-aos="fade-up">
+            <div class="article col s12 m6">
+                <div class="card">
+                    <a href="/2022/011216107.html">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                            
+                            <span class="card-title">Hello World</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-12
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                peng
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </article>
+    </div>
     
 </div>
 
+<script>
+  $("#sp-table").click(function(){
+    $("#cd-timeline").hide();
+    $("#cd-table").show();
+$("#sp-table").css('background', 'linear-gradient(to right, #4cbf30 0%, 
+                       #0f9d58 100%)');
+    $("#sp-table").css('color', '#fff');
+    $("#sp-timeline").css('background', '#F9EBEA')
+    $("#sp-timeline").css('color', 'rgba(0,0,0,0.6)');
+
+  })
+
+  $("#sp-timeline").click(function(){
+    $("#cd-timeline").show();
+    $("#cd-table").hide();
+$("#sp-timeline").css('background', 'linear-gradient(to right, #4cbf30 0%, 
+                          #0f9d58 100%)');
+    $("#sp-timeline").css('color', '#fff');
+    $("#sp-table").css('background', '#F9EBEA')
+    $("#sp-table").css('color', 'rgba(0,0,0,0.6)');
+
+  })
+
     
+//     showTime = function() {
+//     $("#cd-timeline").show();
+//     $("#cd-table").hide();
+//     $("#sp-timeline").css('background', 'linear-gradient(to right, #4cbf30 0%, 
+//                           #0f9d58 100%)');
+//     $("#sp-timeline").css('color', '#fff');
+//     $("#sp-table").css('background', '#F9EBEA')
+//     $("#sp-table").css('color', 'rgba(0,0,0,0.6)');
+//  }
+ 
+//  showTable = function() {
+//     $("#cd-timeline").hide();
+//     $("#cd-table").show();
+//     $("#sp-table").css('background', 'linear-gradient(to right, #4cbf30 0%, 
+//                        #0f9d58 100%)');
+//     $("#sp-table").css('color', '#fff');
+//     $("#sp-timeline").css('background', '#F9EBEA')
+//     $("#sp-timeline").css('color', 'rgba(0,0,0,0.6)');
+//  }
+ </script>
 </main>
 
 
@@ -881,7 +889,7 @@
 
     
 
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -916,6 +924,73 @@
             <br>
 
             <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2022";
+                        var startMonth = "1";
+                        var startDate = "12";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate,
+                                          startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate,
+                                          todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+                        var diffHours = Math.floor((diff / hours) - diffYears * 365
+                                                   * 24 - diffDays * 24);
+                        var diffMinutes = Math.floor((diff / minutes) - diffYears *                                365 * 24 * 60 - diffDays * 24 * 60 - diffHours * 60);
+                        var diffSeconds = Math.floor((diff / seconds) - diffYears *                                     365 * 24 * 60 * 60 - diffDays * 24 * 60 * 60  - diffHours
+                                                     * 60 * 60 - diffMinutes * 60);
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + 
+                                diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear +
+                               " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' 
+                            + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' +
+                                   diffDays + ' 天 ' + diffHours + ' 小时 ' + 
+                                   diffMinutes + ' 分钟 ' + diffSeconds + ' 秒';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + 
+                                   diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = 
+                               yearsAndDaysTip;
+                        }
+                    }
+                    var timer = setInterval(calcSiteTime);
+                    // calcSiteTime();
+                </script>
             
                     &nbsp;|&nbsp;
             
