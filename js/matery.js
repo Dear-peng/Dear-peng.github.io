@@ -166,9 +166,12 @@ $(function () {
                 $('.m-nav-item.m-nav-show').removeClass('m-nav-show');
             }
     });
+    // 初始化加载 tooltipped.
+    $('.tooltipped').tooltip();
+});
 
-    // 深色模式按钮设置
-if (localStorage.getItem('dark') === '1') {
+  // 深色模式按钮设置
+  if (localStorage.getItem('dark') === '1') {
     document.body.classList.add('dark');
 } else if (new Date().getHours() >= 22 || new Date().getHours() < 7) {
     /*定时开启暗色模式<默认晚22点至早6点默认开启>*/
@@ -204,8 +207,3 @@ setTimeout(
         }
     }, 2200);
 
-
-
-    // 初始化加载 tooltipped.
-    $('.tooltipped').tooltip();
-});
