@@ -566,21 +566,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-14
+                    2022-01-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.1k
+                    2.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    8 分
                 </div>
                 
 
@@ -617,10 +617,7 @@
 <li>鼠标hover时，左侧显示<code>-&gt;</code>，点击可跳转到<code>Styles</code>面板中的CSS规则</li>
 <li>可在生效的CSS规则中修改样式</li>
 </ol>
-
-
-
-
+<p>![计算样式定位到CSS规则](Chrome DevTools/image1.png)</p>
 <h4 id="2-颜色选择器"><a href="#2-颜色选择器" class="headerlink" title="(2)颜色选择器"></a>(2)颜色选择器</h4><p>​     在调试CSS中，设置颜色相关属性的值，可以通过Chrome提供的颜色选择器，动态修改颜色。</p>
 <ol>
 <li>找到CSS中设置颜色的属性</li>
@@ -628,13 +625,14 @@
 </ol>
 
 
-<p><img src="C:\Users\86173\AppData\Roaming\Typora\typora-user-images\image-20210823121628799.png" alt="image-20210823121628799"></p>
+<p><img src="image%5C%E9%A2%9C%E8%89%B2%E9%80%89%E6%8B%A9%E5%99%A8.png" alt="颜色选择器"></p>
+<p>![](Chrome DevTools技巧\image2.png)</p>
 <h4 id="3-阴影选择器"><a href="#3-阴影选择器" class="headerlink" title="(3)阴影选择器"></a>(3)阴影选择器</h4><p>阴影选择器用于<code>box-shadow</code>属性，可以直接通过选择器可视化调整。</p>
 <ol>
 <li>点击<code>box-shadow</code>属性右侧的“层叠偏移图标”，弹出阴影选择器</li>
 <li>通过颜色选择器面板可设置横纵轴偏移量、阴影模糊度和扩散度、内外阴影</li>
 </ol>
-
+![阴影选择器](Chrome DevTools技巧\阴影选择器.png)
 
 <h4 id="4-CSS属性值快速调整"><a href="#4-CSS属性值快速调整" class="headerlink" title="(4)CSS属性值快速调整"></a>(4)CSS属性值快速调整</h4><p>鼠标滚轮可以实现css属性值的微调或快速调整，比如字体大小、旋转角度、宽高数值等 鼠标滚轮不只是+-1</p>
 <ol>
@@ -657,7 +655,7 @@
 <li>预览动画执行过程、动画时间曲线</li>
 <li>侦听记录所有动画过程</li>
 </ul>
-<h2 id="2-模拟网速和禁止缓存"><a href="#2-模拟网速和禁止缓存" class="headerlink" title="2. 模拟网速和禁止缓存"></a><strong>2. 模拟网速和禁止缓存</strong></h2><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9XWW9hT241dDBBTWZXcWRkQ1Nic2ljMGQ3U29USTA0N1Y4YkdrNkQ4UFVsUWprWTNpYVNpY1VNSVJFbWhKVGhLMTZMY0pLWVQxRDJSZ2lhTVBBZjVSendWcUEvNjQwP3d4X2ZtdD1wbmc?x-oss-process=image/format,png" alt="img"></p>
+<h2 id="2-模拟网速和禁止缓存"><a href="#2-模拟网速和禁止缓存" class="headerlink" title="2. 模拟网速和禁止缓存"></a><strong>2. 模拟网速和禁止缓存</strong></h2><p>![模拟网速](Chrome DevTools技巧\模拟网速.png)</p>
 <p>Online里面的选项：</p>
 <ul>
 <li>Fast 3G，模拟很快的3G网络</li>
@@ -665,10 +663,10 @@
 <li>Offline，模拟断网的情况</li>
 </ul>
 <p>这个也可以自己调节，在DevTools 中的网络选项卡中，可以看到每个功能、操作或文件加载需要多长时间。也可以使用网络选项卡来模拟缓慢的网络连接，使用 <code>Network Throttling</code> 就可以做到这点。</p>
-<p><img src="https://filescdn.proginn.com/8d61bb72f42b3ea6ee474de757d8539a/590ca465c7321f6f954d7944edf282c0.webp" alt="img"></p>
+<p>![调节网速](Chrome DevTools技巧\调节网速.webp)</p>
 <p>添加和选择这个配置文件后，剩下要做的就是刷新页面，看看它在糟糕的网络连接下的表现。</p>
 <h2 id="3-使用设计模式"><a href="#3-使用设计模式" class="headerlink" title="3.使用设计模式"></a>3.使用设计模式</h2><p>另一个 CSS 和设计技巧是使用设计模式直接编辑网站上的内容，不需要修改 HTML 和 CSS 源文件，只需点击/高亮页面上的内容，就可以修改它。要开启这个模式，只需在控制台中输入 <code>document.designMode = "on"</code>或者 <code>document.body.contentEditable = "true"</code>即可。</p>
-<p><img src="https://filescdn.proginn.com/7deb47726bdce3f2b6c12676ad749e01/0ffafabd9f9393c1732ae116a101894b.webp" alt="img"></p>
+<p>![使用设计模式](Chrome DevTools技巧\使用设计模式.webp)</p>
 <h2 id="4-用预置或自定义地址重写地理位置"><a href="#4-用预置或自定义地址重写地理位置" class="headerlink" title="4.用预置或自定义地址重写地理位置"></a>4.用预置或自定义地址重写地理位置</h2><p>JavaScript 可以这样获取你的地理位置：</p>
 <pre><code>navigator.geolocation.getCurrentPosition(console.log)
 </code></pre>
@@ -688,10 +686,10 @@
 <h3 id="7-Console的理解"><a href="#7-Console的理解" class="headerlink" title="7.Console的理解"></a>7.<strong>Console</strong>的理解</h3><p>当Debug的时候，咱们绝大部分时间是在和Console打交道。咱们每每在代码中插入不少Console log()，经过打印变量值来debug。鉴于Console对于咱们这么重要，颇有必要了解全部开发者工具提供的相关的APIs和快捷键。</p>
 <p><strong>(1). 打印对象</strong></p>
 <p>在使用<code>console.log();的时候，不只仅打印变量，而是要打印对象，用大括号(</code>{}`)将变量包围起来。这样的优势是不只会把变量的值打印，同时还会将变量名打印出来。</p>
-<p><img src="C:\Users\86173\AppData\Roaming\Typora\typora-user-images\image-20210823111713549.png" alt="image-20210823111713549"></p>
+<p>![打印对象](Chrome DevTools技巧\打印对象.png)</p>
 <p> <strong>(2)使用console.table来打印多条目数据</strong></p>
 <p>要打印的变量是一个数组，每个元素都是一个对象。使用<code>console.table</code>来打印，其表格化的呈现更加美观易读。</p>
-<p><img src="https://resource.shangmayuan.com/droxy-blog/2019/11/06/1831162582594b2c8a9e3d68d39daa34-1.jpg" alt="img"></p>
+<p>![打印多条数据](Chrome DevTools技巧\打印多条数据.jpg)</p>
 <p><strong>(3)给log加点颜色</strong></p>
 <p>log有时候变得很是多，包含你本身的、一些第三方扩展或者浏览器的logs。除了使用过滤器(filter)之外，你还可使用颜色来更好地区分。</p>
 <ul>
@@ -713,7 +711,7 @@ console<span class="token punctuation">.</span><span class="token function">erro
   <span class="token string">'color: blue'</span><span class="token punctuation">,</span> <span class="token string">'color: red'</span> <span class="token comment" spellcheck="true">// CSS Style</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p><a target="_blank" rel="noopener" href="https://blog.fundebug.com/2018/08/22/art-of-debugging-with-chrome-devtools/logcolor.png"><img src="https://resource.shangmayuan.com/droxy-blog/2019/11/06/bf1847e15ff1486fb533e11e5cb5ff2f-1.jpg" alt="img"></a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.fundebug.com/2018/08/22/art-of-debugging-with-chrome-devtools/logcolor.png">![log加颜色g](Chrome DevTools技巧\log加颜色.jpg)</a></p>
 <p><strong>(4)计时功能</strong></p>
 <p>使用<code>Console.time()</code>和<code>Console.timeEnd()</code>包裹需要计时的代码片段，输出运行这段代码的事件。</p>
 <ul>
@@ -731,7 +729,6 @@ console<span class="token punctuation">.</span><span class="token function">time
 <p><strong>(5)性能分析</strong></p>
 <p>使用<code>Console.profile()</code>进行性能分析，查看代码各部分运行消耗的时间，在Chrome自带的调试工具中并没有找到在哪里查看这两个方法生成的分析报告。应该需要其他的调试工具。</p>
 <p>具体参考这里：<br><a target="_blank" rel="noopener" href="https://link.segmentfault.com/?url=http://www.oschina.net/translate/performance-optimisation-with-timeline-profiles">http://www.oschina.net/transl…</a></p>
-<p>- </p>
 
                 
             </div>
@@ -1483,7 +1480,7 @@ console<span class="token punctuation">.</span><span class="token function">time
 
             
                 <span style="margin-left: -20px; display: inline">
-                &nbsp;  <i class="fas fa-chart-area"></i>&nbsp;siteTotalWords:&nbsp;<span  class="white-color">5.4k</span>
+                &nbsp;  <i class="fas fa-chart-area"></i>&nbsp;siteTotalWords:&nbsp;<span  class="white-color">5.5k</span>
                 <span/>
             
 
@@ -1493,12 +1490,12 @@ console<span class="token punctuation">.</span><span class="token function">time
             
             
                 <span id="busuanzi_container_site_pv3" style="display: inline">
-                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;siteTotalVisits:&nbsp;<span id="busuanzi_value_site_pv" class="white-color">5.4k</span>
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;siteTotalVisits:&nbsp;<span id="busuanzi_value_site_pv" class="white-color">5.5k</span>
                 </span>
             
             
                 <span id="busuanzi_container_site_uv3" style="display: inline">
-                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;siteTotalVisitors:&nbsp;<span id="busuanzi_value_site_uv" class="white-color">5.4k</span>
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;siteTotalVisitors:&nbsp;<span id="busuanzi_value_site_uv" class="white-color">5.5k</span>
                 </span>
             
             <br>
