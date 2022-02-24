@@ -46,6 +46,62 @@
   </entry>
   
   <entry>
+    <title>前端实现语音识别、语音翻译</title>
+    <link href="http://example.com/2022/022324686.html"/>
+    <id>http://example.com/2022/022324686.html</id>
+    <published>2022-02-23T03:19:29.000Z</published>
+    <updated>2022-02-24T06:48:51.444Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前端实现语音识别、语音翻译&quot;&gt;&lt;a href=&quot;#前端实现语音识别、语音翻译&quot; class=&quot;headerlink&quot; title=&quot;前端实现语音识别、语音翻译&quot;&gt;&lt;/a&gt;前端实现语音识别、语音翻译&lt;/h1&gt;&lt;p&gt;需求：用户说一段话，转译英文&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="AI生成" scheme="http://example.com/categories/AI%E7%94%9F%E6%88%90/"/>
+    
+    
+    <category term="语音识别" scheme="http://example.com/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/"/>
+    
+    <category term="语音翻译" scheme="http://example.com/tags/%E8%AF%AD%E9%9F%B3%E7%BF%BB%E8%AF%91/"/>
+    
+    <category term="AI生成" scheme="http://example.com/tags/AI%E7%94%9F%E6%88%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端实时时间</title>
+    <link href="http://example.com/2022/022324686.html"/>
+    <id>http://example.com/2022/022324686.html</id>
+    <published>2022-02-23T03:19:29.000Z</published>
+    <updated>2022-02-24T07:39:36.403Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前端实时时间&quot;&gt;&lt;a href=&quot;#前端实时时间&quot; class=&quot;headerlink&quot; title=&quot;前端实时时间&quot;&gt;&lt;/a&gt;前端实时时间&lt;/h1&gt;&lt;p&gt;需求：获取实时时间&lt;/p&gt;
+&lt;h3 id=&quot;暴露获取时间函数&quot;&gt;&lt;a href=&quot;#暴露获取时间函数&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="time" scheme="http://example.com/tags/time/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Chrome DevTools使用技巧</title>
     <link href="http://example.com/2022/011428074.html"/>
     <id>http://example.com/2022/011428074.html</id>
