@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-23T10:07:27.616Z</updated>
+  <updated>2022-02-25T02:09:37.713Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>前端下载base64格式视频</title>
-    <link href="http://example.com/2022/022324686.html"/>
-    <id>http://example.com/2022/022324686.html</id>
-    <published>2022-02-23T03:19:29.000Z</published>
-    <updated>2022-02-23T10:07:27.616Z</updated>
+    <title>前端实时时间</title>
+    <link href="http://example.com/2022/022424686.html"/>
+    <id>http://example.com/2022/022424686.html</id>
+    <published>2022-02-24T04:25:21.000Z</published>
+    <updated>2022-02-25T02:09:37.713Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;前端下载base64格式视频&quot;&gt;&lt;a href=&quot;#前端下载base64格式视频&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;前端实时时间&quot;&gt;&lt;a href=&quot;#前端实时时间&quot; class=&quot;headerlink&quot; title=&quot;前端实时时间&quot;&gt;&lt;/a&gt;前端实时时间&lt;/h1&gt;&lt;p&gt;需求：获取实时时间&lt;/p&gt;
+&lt;h3 id=&quot;暴露获取时间函数&quot;&gt;&lt;a href=&quot;#暴露获取时间函数&quot;</summary>
         
       
     
@@ -37,20 +38,16 @@
     <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="base64" scheme="http://example.com/tags/base64/"/>
-    
-    <category term="blob" scheme="http://example.com/tags/blob/"/>
-    
-    <category term="下载视频" scheme="http://example.com/tags/%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/"/>
+    <category term="time" scheme="http://example.com/tags/time/"/>
     
   </entry>
   
   <entry>
     <title>前端实现语音识别、语音翻译</title>
-    <link href="http://example.com/2022/022324686.html"/>
-    <id>http://example.com/2022/022324686.html</id>
-    <published>2022-02-23T03:19:29.000Z</published>
-    <updated>2022-02-24T06:48:51.444Z</updated>
+    <link href="http://example.com/2022/022424686.html"/>
+    <id>http://example.com/2022/022424686.html</id>
+    <published>2022-02-24T03:10:29.000Z</published>
+    <updated>2022-02-25T02:09:43.120Z</updated>
     
     
       
@@ -72,32 +69,6 @@
     <category term="语音翻译" scheme="http://example.com/tags/%E8%AF%AD%E9%9F%B3%E7%BF%BB%E8%AF%91/"/>
     
     <category term="AI生成" scheme="http://example.com/tags/AI%E7%94%9F%E6%88%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端实时时间</title>
-    <link href="http://example.com/2022/022324686.html"/>
-    <id>http://example.com/2022/022324686.html</id>
-    <published>2022-02-23T03:19:29.000Z</published>
-    <updated>2022-02-24T07:39:36.403Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;前端实时时间&quot;&gt;&lt;a href=&quot;#前端实时时间&quot; class=&quot;headerlink&quot; title=&quot;前端实时时间&quot;&gt;&lt;/a&gt;前端实时时间&lt;/h1&gt;&lt;p&gt;需求：获取实时时间&lt;/p&gt;
-&lt;h3 id=&quot;暴露获取时间函数&quot;&gt;&lt;a href=&quot;#暴露获取时间函数&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="time" scheme="http://example.com/tags/time/"/>
     
   </entry>
   
@@ -125,6 +96,35 @@
     <category term="canvas" scheme="http://example.com/tags/canvas/"/>
     
     <category term="涂鸦" scheme="http://example.com/tags/%E6%B6%82%E9%B8%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端下载base64格式视频</title>
+    <link href="http://example.com/2022/022324686.html"/>
+    <id>http://example.com/2022/022324686.html</id>
+    <published>2022-02-22T17:13:45.000Z</published>
+    <updated>2022-02-25T02:10:27.458Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前端下载base64格式视频&quot;&gt;&lt;a href=&quot;#前端下载base64格式视频&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="base64" scheme="http://example.com/tags/base64/"/>
+    
+    <category term="blob" scheme="http://example.com/tags/blob/"/>
+    
+    <category term="下载视频" scheme="http://example.com/tags/%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/"/>
     
   </entry>
   

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Chrome DevTools使用技巧, peng的博客,HTML,CSS,JavaScript,JQuery,vue.js等">
+    <meta name="keywords" content="前端实现语音识别、语音翻译, peng的博客,HTML,CSS,JavaScript,JQuery,vue.js等">
     <meta name="description" content="本网站是个人兴趣爱好，总结、记录、分享前端工作经验">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Chrome DevTools使用技巧 | peng的博客</title>
+    <title>前端实现语音识别、语音翻译 | peng的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -409,12 +409,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Chrome DevTools使用技巧</h1>
+                    <h1 class="description center-align post-title">前端实现语音识别、语音翻译</h1>
                 </div>
             </div>
         </div>
@@ -530,12 +530,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Chrome/">
-                                <span class="chip bg-color">Chrome</span>
+                            <a href="/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/">
+                                <span class="chip bg-color">语音识别</span>
                             </a>
                         
-                            <a href="/tags/Chrome%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/">
-                                <span class="chip bg-color">Chrome开发技巧</span>
+                            <a href="/tags/%E8%AF%AD%E9%9F%B3%E7%BF%BB%E8%AF%91/">
+                                <span class="chip bg-color">语音翻译</span>
+                            </a>
+                        
+                            <a href="/tags/AI%E7%94%9F%E6%88%90/">
+                                <span class="chip bg-color">AI生成</span>
                             </a>
                         
                     </div>
@@ -546,8 +550,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/" class="post-category">
-                                经验总结
+                            <a href="/categories/AI%E7%94%9F%E6%88%90/" class="post-category">
+                                AI生成
                             </a>
                         
                     </div>
@@ -559,28 +563,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-14
+                    2022-02-24
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-17
+                    2022-02-25
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.1k
+                    686
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    3 分
                 </div>
                 
 
@@ -600,146 +604,188 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Chrome-DevTools使用技巧"><a href="#Chrome-DevTools使用技巧" class="headerlink" title="Chrome DevTools使用技巧"></a>Chrome DevTools使用技巧</h1><h2 id="一-Chrome-DevTools-功能简介"><a href="#一-Chrome-DevTools-功能简介" class="headerlink" title="一.Chrome DevTools 功能简介"></a>一.Chrome DevTools 功能简介</h2><p>（九大功能面板）</p>
-<h4 id="（1）Elements元素面板"><a href="#（1）Elements元素面板" class="headerlink" title="（1）Elements元素面板"></a>（1）Elements元素面板</h4><p>​        检查和调整页面，调试DOM,调试CSS</p>
-<h4 id="（2）Network网络面板"><a href="#（2）Network网络面板" class="headerlink" title="（2）Network网络面板"></a>（2）Network网络面板</h4><p>​         调试请求，了解页面静态资源分布，网页性能检测</p>
-<h4 id="（3）Console控制台面板"><a href="#（3）Console控制台面板" class="headerlink" title="（3）Console控制台面板"></a>（3）Console控制台面板</h4><p>​         调试javascript,查看console log日志，交互式代码调试</p>
-<h4 id="（4）Sources源代码资源面板"><a href="#（4）Sources源代码资源面板" class="headerlink" title="（4）Sources源代码资源面板"></a>（4）Sources源代码资源面板</h4><p>​          调试JavaScript页面源代码，进行断点调试代码</p>
-<h4 id="（5）Application应用面板"><a href="#（5）Application应用面板" class="headerlink" title="（5）Application应用面板"></a>（5）Application应用面板</h4><p>​            查看&amp;调试客户端存储，如Cookie,LocalStorage,SessionStorage等</p>
-<h4 id="（6）Performance性能面板"><a href="#（6）Performance性能面板" class="headerlink" title="（6）Performance性能面板"></a>（6）Performance性能面板</h4><p>​            查看页面性能细节，细粒度对网页载入进行性能优化（高阶)</p>
-<h4 id="（7）Memory内存面板"><a href="#（7）Memory内存面板" class="headerlink" title="（7）Memory内存面板"></a>（7）Memory内存面板</h4><p>​             JavaScript CPU分析器，内存堆分析器（高阶)</p>
-<h4 id="（8）Security安全面板"><a href="#（8）Security安全面板" class="headerlink" title="（8）Security安全面板"></a>（8）Security安全面板</h4><p>​            查看页面安全及证书问题（高阶)</p>
-<h4 id="（9）Lighthouse-Audits-面板"><a href="#（9）Lighthouse-Audits-面板" class="headerlink" title="（9）Lighthouse(Audits)面板"></a>（9）Lighthouse(Audits)面板</h4><p>​            使用Google Lighthouse辅助性能分析，给出优化建议（高阶)</p>
-<h2 id="二-Chrome-DevTools-使用技巧"><a href="#二-Chrome-DevTools-使用技巧" class="headerlink" title="二.Chrome DevTools 使用技巧"></a>二.Chrome DevTools 使用技巧</h2><h3 id="1-有关css方面"><a href="#1-有关css方面" class="headerlink" title="1.有关css方面"></a>1.有关css方面</h3><h4 id="1-样式定位到CSS"><a href="#1-样式定位到CSS" class="headerlink" title="(1)样式定位到CSS"></a>(1)样式定位到CSS</h4><p>项目DOM层级是比较复杂（深），例如<code>font-size</code>这一样式属性，就可能存在多层覆盖，我们必须定位到最终表现生效的CSS，才能做出有效修改。</p>
-<ol>
-<li>在<code>Computed</code>面板中的<code>filter</code>输入框筛选样式属性名</li>
-<li>展开属性，看到多处定义，且只有第一行生效</li>
-<li>鼠标hover时，左侧显示<code>-&gt;</code>，点击可跳转到<code>Styles</code>面板中的CSS规则</li>
-<li>可在生效的CSS规则中修改样式</li>
-</ol>
-<img src="/2022/011428074/image1.png" class="">
-
-<h4 id="2-颜色选择器"><a href="#2-颜色选择器" class="headerlink" title="(2)颜色选择器"></a>(2)颜色选择器</h4><p>​     在调试CSS中，设置颜色相关属性的值，可以通过Chrome提供的颜色选择器，动态修改颜色。</p>
-<ol>
-<li>找到CSS中设置颜色的属性</li>
-<li>点击颜色值左侧的选择器（彩色方块）</li>
-</ol>
-<img src="/2022/011428074/%E9%A2%9C%E8%89%B2%E9%80%89%E6%8B%A9%E5%99%A8.png" class="">
-
-
-<h4 id="3-阴影选择器"><a href="#3-阴影选择器" class="headerlink" title="(3)阴影选择器"></a>(3)阴影选择器</h4><p>阴影选择器用于<code>box-shadow</code>属性，可以直接通过选择器可视化调整。</p>
-<ol>
-<li>点击<code>box-shadow</code>属性右侧的“层叠偏移图标”，弹出阴影选择器</li>
-<li>通过颜色选择器面板可设置横纵轴偏移量、阴影模糊度和扩散度、内外阴影</li>
-</ol>
-<img src="/2022/011428074/%E9%98%B4%E5%BD%B1%E9%80%89%E6%8B%A9%E5%99%A8.png" class="">
-
-<h4 id="4-CSS属性值快速调整"><a href="#4-CSS属性值快速调整" class="headerlink" title="(4)CSS属性值快速调整"></a>(4)CSS属性值快速调整</h4><p>鼠标滚轮可以实现css属性值的微调或快速调整，比如字体大小、旋转角度、宽高数值等 鼠标滚轮不只是+-1</p>
-<ol>
-<li>+-0.1：<code>Option</code>+鼠标滚轮，windows系统是<code>Alt</code>+滚轮</li>
-<li>+-1：滚轮前后滚动</li>
-<li>+-10：<code>Shift</code>+鼠标滚轮</li>
-<li>+-100：<code>Command</code>+鼠标滚轮，Windows系统是<code>Ctrl</code>+滚轮</li>
-</ol>
-<h4 id="5-animation动画调试"><a href="#5-animation动画调试" class="headerlink" title="(5)animation动画调试"></a>(5)animation动画调试</h4><p>某些元素动画效果可以通过“帧动画”、<code>transition</code>实现，开发实现过程中的代码过于抽象，实际上还是得在浏览器中查看效果。Chrome开发工具提供了针对animation的调试面板。该面板可提供动画重播、暂停、预览、修改 操作方法：</p>
-<ol>
-<li>打开控制台，键盘按“ESC”，调出Console面板</li>
-<li>点击Console面板左上角“竖三点”，弹出菜单选择“Animations”，即可打开动画调试面板</li>
-</ol>
-<p>在动画面板可以看到帧动画的名称和对应DOM节点，点击第一列的DOM节点，可以快速定位到Elements面板中DOM所在位置，同时Styles面板也会更新，可滚动Styles面板到底部即可看到已定义的“帧动画” 动画面板的作用：</p>
-<ul>
-<li>定位动画作用的DOM结构</li>
-<li>控制动画执行过程：播放、暂停、重播、减速动画、控制执行时间</li>
-<li>预览动画执行过程、动画时间曲线</li>
-<li>侦听记录所有动画过程</li>
-</ul>
-<h2 id="2-模拟网速和禁止缓存"><a href="#2-模拟网速和禁止缓存" class="headerlink" title="2. 模拟网速和禁止缓存"></a><strong>2. 模拟网速和禁止缓存</strong></h2><img src="/2022/011428074/%E6%A8%A1%E6%8B%9F%E7%BD%91%E9%80%9F.png" class="">
-
-
-
-<p>Online里面的选项：</p>
-<ul>
-<li>Fast 3G，模拟很快的3G网络</li>
-<li>Slow 3G，模拟很慢的3G网络</li>
-<li>Offline，模拟断网的情况</li>
-</ul>
-<p>这个也可以自己调节，在DevTools 中的网络选项卡中，可以看到每个功能、操作或文件加载需要多长时间。也可以使用网络选项卡来模拟缓慢的网络连接，使用 <code>Network Throttling</code> 就可以做到这点。</p>
-<img src="/2022/011428074/%E8%B0%83%E8%8A%82%E7%BD%91%E9%80%9F.webp" class="">
-
-<p>添加和选择这个配置文件后，剩下要做的就是刷新页面，看看它在糟糕的网络连接下的表现。</p>
-<h2 id="3-使用设计模式"><a href="#3-使用设计模式" class="headerlink" title="3.使用设计模式"></a>3.使用设计模式</h2><p>另一个 CSS 和设计技巧是使用设计模式直接编辑网站上的内容，不需要修改 HTML 和 CSS 源文件，只需点击/高亮页面上的内容，就可以修改它。要开启这个模式，只需在控制台中输入 <code>document.designMode = "on"</code>或者 <code>document.body.contentEditable = "true"</code>即可。</p>
-<img src="/2022/011428074/%E4%BD%BF%E7%94%A8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.webp" class="">
-
-
-
-
-
-
-
-
-
-<h2 id="4-用预置或自定义地址重写地理位置"><a href="#4-用预置或自定义地址重写地理位置" class="headerlink" title="4.用预置或自定义地址重写地理位置"></a>4.用预置或自定义地址重写地理位置</h2><p>JavaScript 可以这样获取你的地理位置：</p>
-<pre><code>navigator.geolocation.getCurrentPosition(console.log)
+                <h1 id="前端实现语音识别、语音翻译"><a href="#前端实现语音识别、语音翻译" class="headerlink" title="前端实现语音识别、语音翻译"></a>前端实现语音识别、语音翻译</h1><p>需求：用户说一段话，转译英文</p>
+<h2 id="一、录音"><a href="#一、录音" class="headerlink" title="一、录音"></a>一、录音</h2><h3 id="使用的是js-audio-recorder"><a href="#使用的是js-audio-recorder" class="headerlink" title="使用的是js-audio-recorder"></a>使用的是js-audio-recorder</h3><p>另我这个里面有些东西是不需要的，因为我有个录音波浪图的功能，大家可忽略</p>
+<pre class=" language-javascript"><code class="language-javascript">   <span class="token keyword">let</span> recorder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Recorder</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  sampleBits<span class="token punctuation">:</span> <span class="token number">16</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 采样位数，支持 8 或 16，默认是16</span>
+  sampleRate<span class="token punctuation">:</span> <span class="token number">16000</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 采样率，支持 11025、16000、22050、24000、44100、48000</span>
+  numChannels<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 声道，支持 1 或 2， 默认是1</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">/**
+     *  录音的具体操作功能
+     * */</span>
+    <span class="token comment" spellcheck="true">// 开始录音</span>
+    <span class="token function">startRecorder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      recorder<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>
+        <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">drawRecord</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//开始绘制图片</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>error<span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> : </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>error<span class="token punctuation">.</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">// 结束录音</span>
+    <span class="token function">stopRecorder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      recorder<span class="token punctuation">.</span><span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>drawRecordId <span class="token operator">&amp;&amp;</span> <span class="token function">cancelAnimationFrame</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>drawRecordId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>drawRecordId <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">// 录音播放</span>
+    <span class="token function">playRecorder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      recorder<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">drawPlay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//绘制波浪图</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">// 停止录音播放</span>
+    <span class="token function">stopPlayRecorder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      recorder<span class="token punctuation">.</span><span class="token function">stopPlay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">// 销毁录音</span>
+    <span class="token function">destroyRecorder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      recorder<span class="token punctuation">.</span><span class="token function">destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        recorder <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>drawRecordId <span class="token operator">&amp;&amp;</span> <span class="token function">cancelAnimationFrame</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>drawRecordId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>drawRecordId <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
 </code></pre>
-<p>在 Chrome DevTools 的 Sensors 面板中，你可以用预置的或者自己定义的地址重写经纬度。该功能可以用来调试使用地理位置的页面。操作如下：</p>
-<ul>
-<li>打开 <code>Sensor</code> 面板（如图操作或快捷键 <code>Ctrl Shift P</code> 输入 <code>sensor</code> 回车）</li>
-<li>选择一个预置地址或点击 <code>Manage</code> 自定义新的地址（地名，经纬度）</li>
-<li>在 <code>Console</code> 面板下输入 <code>navigator.geolocation.getCurrentPosition(console.log)</code> 观察地址变化。</li>
-</ul>
-<h2 id="5-从-Console-Violations-获取性能建议"><a href="#5-从-Console-Violations-获取性能建议" class="headerlink" title="5.从 Console Violations 获取性能建议"></a>5.从 Console Violations 获取性能建议</h2><p>Console Violations 会给你提示针对你代码的最佳实践。使用该功能的好处就是，不需要去运行 <code>Performance</code>  ，因为违规代码执行的时候就会显示相应的Violations，如强制回流的 JavaScript，使用了 <code>document.write</code> 的 JavaScript，执行缓慢的 <code>setTimeout </code>处理程序，效率低下的时间侦听器等等 。操作如下：</p>
-<ul>
-<li>在 <code>Console</code> 面板中点击 <code>Default levels</code> 下拉框，选择 <code>Verbose</code></li>
-<li>在过滤框中输入<code> violation</code></li>
-</ul>
-<h2 id="6-代码覆盖率检测"><a href="#6-代码覆盖率检测" class="headerlink" title="6.代码覆盖率检测"></a>6.代码覆盖率检测</h2><p>项目时间久了，会有很多冗余代码是从来不会执行的，或是需要做首屏加载优化，想把首屏用不到的js和css 代码抽取出来做异步加载，使用chrome自带的coverage检测工具可以很方便的看到哪些代码被执行了，红色表示未被执行的代码。做首屏优化时可以抽取出来做异步加载，如果你把所有的用例都跑完了，这行代码还是红色的，则可以从容的删除这些红色的代码。</p>
-<p>code coverage面板默认是不显示的，需要在more tools 菜单中打开</p>
-<h3 id="7-Console的理解"><a href="#7-Console的理解" class="headerlink" title="7.Console的理解"></a>7.<strong>Console</strong>的理解</h3><p>当Debug的时候，咱们绝大部分时间是在和Console打交道。咱们每每在代码中插入不少Console log()，经过打印变量值来debug。鉴于Console对于咱们这么重要，颇有必要了解全部开发者工具提供的相关的APIs和快捷键。</p>
-<p><strong>(1). 打印对象</strong></p>
-<p>在使用<code>console.log();的时候，不只仅打印变量，而是要打印对象，用大括号(</code>{}`)将变量包围起来。这样的优势是不只会把变量的值打印，同时还会将变量名打印出来。</p>
-<p>![打印对象](Chrome DevTools技巧\打印对象.png)</p>
-<p> <strong>(2)使用console.table来打印多条目数据</strong></p>
-<p>要打印的变量是一个数组，每个元素都是一个对象。使用<code>console.table</code>来打印，其表格化的呈现更加美观易读。</p>
-<p>![打印多条数据](Chrome DevTools技巧\打印多条数据.jpg)</p>
-<p><strong>(3)给log加点颜色</strong></p>
-<p>log有时候变得很是多，包含你本身的、一些第三方扩展或者浏览器的logs。除了使用过滤器(filter)之外，你还可使用颜色来更好地区分。</p>
-<ul>
-<li><code>console.log</code></li>
-<li><code>console.info</code></li>
-<li><code>console.debug</code></li>
-<li><code>console.warn</code></li>
-<li><code>console.error</code></li>
-</ul>
-<p>可以自定义自己的日志样式，例如：</p>
-<pre class=" language-js"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'%cconsole.log'</span><span class="token punctuation">,</span> <span class="token string">'color: green;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
-console<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">'%cconsole.info'</span><span class="token punctuation">,</span> <span class="token string">'color: green;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
-console<span class="token punctuation">.</span><span class="token function">debug</span><span class="token punctuation">(</span><span class="token string">'%cconsole.debug'</span><span class="token punctuation">,</span> <span class="token string">'color: green;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
-console<span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span><span class="token string">'%cconsole.warn'</span><span class="token punctuation">,</span> <span class="token string">'color: green;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
-console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'%cconsole.error'</span><span class="token punctuation">,</span> <span class="token string">'color: green;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<h2 id="二、blobtoBase64"><a href="#二、blobtoBase64" class="headerlink" title="二、blobtoBase64"></a>二、blobtoBase64</h2><p>因百度ai接口需要base64格式编码，需转一下格式</p>
+<pre class=" language-javascript"><code class="language-javascript">    <span class="token comment" spellcheck="true">/**
+     * blob二进制 to base64
+     **/</span>
+    <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">blobToBase64</span><span class="token punctuation">(</span>blob<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span> reject<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> fileReader <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileReader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        fileReader<span class="token punctuation">.</span>onload <span class="token operator">=</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          <span class="token function">resolve</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// readAsDataURL</span>
+        fileReader<span class="token punctuation">.</span><span class="token function">readAsDataURL</span><span class="token punctuation">(</span>blob<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        fileReader<span class="token punctuation">.</span>onerror <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          <span class="token function">reject</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'blobToBase64 error'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 </code></pre>
-<pre class=" language-js"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>
-  <span class="token string">'Nothing here %cHi Cat %cHey Bear'</span><span class="token punctuation">,</span>  <span class="token comment" spellcheck="true">// Console Message</span>
-  <span class="token string">'color: blue'</span><span class="token punctuation">,</span> <span class="token string">'color: red'</span> <span class="token comment" spellcheck="true">// CSS Style</span>
-<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<h2 id="三、调用百度语音识别接口"><a href="#三、调用百度语音识别接口" class="headerlink" title="三、调用百度语音识别接口"></a>三、调用百度语音识别接口</h2><p>先简单处理一下跨域问题</p>
+<pre class=" language-javascript"><code class="language-javascript">      <span class="token string">'/oauth'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        target<span class="token punctuation">:</span> <span class="token string">'https://aip.baidubce.com'</span><span class="token punctuation">,</span>
+        secure<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        pathRewrite<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          <span class="token string">'^/oauth'</span> <span class="token punctuation">:</span> <span class="token string">'/oauth'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        changeOrigin<span class="token punctuation">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
 </code></pre>
-<p><a target="_blank" rel="noopener" href="https://blog.fundebug.com/2018/08/22/art-of-debugging-with-chrome-devtools/logcolor.png">![log加颜色g](Chrome DevTools技巧\log加颜色.jpg)</a></p>
-<p><strong>(4)计时功能</strong></p>
-<p>使用<code>Console.time()</code>和<code>Console.timeEnd()</code>包裹需要计时的代码片段，输出运行这段代码的事件。</p>
-<ul>
-<li><code>Console.time()</code>中的参数作为计时器的标识，具有唯一性。</li>
-<li><code>Console.timeEnd()</code>中的参数来结束此标识的计时器，并以毫秒为单位返回运行时间。</li>
-<li>最多同时运行10000个计时器。</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">time</span><span class="token punctuation">(</span><span class="token string">"Chrome中循环1000次的时间"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">1000</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
+<p>识别接口里有个参数token，所以需先获取token</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
+ *  处理录音识别
+ **/</span>
+
+<span class="token keyword">import</span> request <span class="token keyword">from</span> <span class="token string">'@/api/request'</span>
+<span class="token keyword">const</span> tokenUrl <span class="token operator">=</span> <span class="token string">"/oauth/2.0/token"</span><span class="token punctuation">;</span> 
+<span class="token keyword">const</span> urlInfo <span class="token operator">=</span> <span class="token string">"/server_api"</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> API_KEY <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//自己去官网上开通服务，拿到 API_KEY</span>
+<span class="token keyword">const</span> SECRET_KEY <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//自己去官网上开通服务，拿到  SECRET_KEY</span>
+<span class="token keyword">const</span> myurl <span class="token operator">=</span>
+  tokenUrl <span class="token operator">+</span>
+  <span class="token string">"?grant_type=client_credentials"</span> <span class="token operator">+</span>
+  <span class="token string">"&amp;client_id="</span> <span class="token operator">+</span>
+  API_KEY <span class="token operator">+</span>
+  <span class="token string">"&amp;client_secret="</span> <span class="token operator">+</span>
+  SECRET_KEY<span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">identify</span><span class="token punctuation">(</span>blob<span class="token punctuation">,</span> size<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> request<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span>myurl<span class="token punctuation">)</span>
+  <span class="token keyword">let</span> access_token <span class="token operator">=</span> res<span class="token punctuation">.</span>access_token<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> speech <span class="token operator">=</span> blob<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"data:audio/wav;base64,"</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> formData <span class="token operator">=</span> <span class="token punctuation">{</span>
+      format<span class="token punctuation">:</span> <span class="token string">"wav"</span><span class="token punctuation">,</span>
+      rate<span class="token punctuation">:</span> <span class="token number">16000</span><span class="token punctuation">,</span>
+      dev_pid<span class="token punctuation">:</span> <span class="token number">1537</span><span class="token punctuation">,</span>
+      channel<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      token<span class="token punctuation">:</span> access_token<span class="token punctuation">,</span>
+      cuid<span class="token punctuation">:</span> <span class="token string">"baidu_workshop"</span><span class="token punctuation">,</span>
+      len<span class="token punctuation">:</span> size<span class="token punctuation">,</span>
+      speech<span class="token punctuation">:</span> speech<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> r <span class="token operator">=</span> <span class="token keyword">await</span> request<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span>urlInfo<span class="token punctuation">,</span> formData<span class="token punctuation">)</span>
+    <span class="token keyword">let</span> basic <span class="token operator">=</span> r<span class="token punctuation">.</span>result<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> newBasic <span class="token operator">=</span> basic<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> basic<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> newBasic
 
 <span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">timeEnd</span><span class="token punctuation">(</span><span class="token string">"Chrome中循环1000次的时间"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p><strong>(5)性能分析</strong></p>
-<p>使用<code>Console.profile()</code>进行性能分析，查看代码各部分运行消耗的时间，在Chrome自带的调试工具中并没有找到在哪里查看这两个方法生成的分析报告。应该需要其他的调试工具。</p>
-<p>具体参考这里：<br><a target="_blank" rel="noopener" href="https://link.segmentfault.com/?url=http://www.oschina.net/translate/performance-optimisation-with-timeline-profiles">http://www.oschina.net/transl…</a></p>
+<h2 id="四、调用百度语音翻译接口"><a href="#四、调用百度语音翻译接口" class="headerlink" title="四、调用百度语音翻译接口"></a>四、调用百度语音翻译接口</h2><p>同识别接口差不多，解决跨域问题再请求，不对，应该是先请求出现跨域问题再解决。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
+ *  处理语音翻译
+ **/</span>
+ <span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">"axios"</span><span class="token punctuation">;</span>
+ <span class="token keyword">import</span> md5 <span class="token keyword">from</span> <span class="token string">"js-md5"</span><span class="token punctuation">;</span>
+
+
+ <span class="token keyword">const</span> request <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    baseURL<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    headers<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">"Content-Type"</span><span class="token punctuation">:</span> <span class="token string">"application/x-www-form-urlencoded"</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+
+ <span class="token keyword">let</span> appid <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//去官网获取</span>
+ <span class="token keyword">let</span> key <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//去官网获取</span>
+ <span class="token keyword">let</span> salt <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token string">"/api/trans/vip/translate"</span><span class="token punctuation">;</span>
+ <span class="token keyword">let</span> form <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FormData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">let</span> <span class="token keyword">from</span> <span class="token operator">=</span> <span class="token string">"zh"</span><span class="token punctuation">;</span>
+ <span class="token keyword">let</span> to <span class="token operator">=</span> <span class="token string">"en"</span><span class="token punctuation">;</span>
+
+ <span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">translate</span><span class="token punctuation">(</span>word<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> query <span class="token operator">=</span> word<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 多个query可以用\n连接  如 query='apple\norange\nbanana\npear'</span>
+    <span class="token keyword">let</span> str1 <span class="token operator">=</span> appid <span class="token operator">+</span> query <span class="token operator">+</span> salt <span class="token operator">+</span> key<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> sign <span class="token operator">=</span> <span class="token function">md5</span><span class="token punctuation">(</span>str1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> myurl <span class="token operator">=</span>
+      url <span class="token operator">+</span>
+      <span class="token string">"?appid="</span> <span class="token operator">+</span>
+      appid <span class="token operator">+</span>
+      <span class="token string">"&amp;from="</span> <span class="token operator">+</span>
+      <span class="token keyword">from</span> <span class="token operator">+</span>
+      <span class="token string">"&amp;to="</span> <span class="token operator">+</span>
+      to <span class="token operator">+</span>
+      <span class="token string">"&amp;salt="</span> <span class="token operator">+</span>
+      salt <span class="token operator">+</span>
+      <span class="token string">"&amp;sign="</span> <span class="token operator">+</span>
+      sign<span class="token punctuation">;</span>
+    form<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"q"</span><span class="token punctuation">,</span> query<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+    <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> request<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span>myurl<span class="token punctuation">,</span> form<span class="token punctuation">)</span>
+    <span class="token keyword">let</span> prompt <span class="token operator">=</span> res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>trans_result<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dst<span class="token punctuation">;</span>
+    localStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">"prompt"</span><span class="token punctuation">,</span> prompt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> prompt
+  <span class="token punctuation">}</span>
+  
+</code></pre>
+<pre class=" language-javascript"><code class="language-javascript">      <span class="token string">'/api'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        target<span class="token punctuation">:</span> <span class="token string">'http://api.fanyi.baidu.com'</span><span class="token punctuation">,</span>
+        secure<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        pathRewrite<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          <span class="token string">'^/api'</span> <span class="token punctuation">:</span> <span class="token string">'/api'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        changeOrigin<span class="token punctuation">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+</code></pre>
+<h2 id="三、调用"><a href="#三、调用" class="headerlink" title="三、调用"></a>三、调用</h2><p>调用即可 word为中文，prompt为英文</p>
+<pre class=" language-javascript"><code class="language-javascript">    <span class="token comment" spellcheck="true">/**
+     *  处理录音识别,语音翻译
+     **/</span>
+    <span class="token keyword">async</span> <span class="token function">identify</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> file <span class="token operator">=</span> recorder<span class="token punctuation">.</span><span class="token function">getWAVBlob</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">let</span> size <span class="token operator">=</span> file<span class="token punctuation">.</span>size<span class="token punctuation">;</span>
+      <span class="token keyword">const</span> blob <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">blobToBase64</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">const</span> word <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">identify</span><span class="token punctuation">(</span>blob<span class="token punctuation">,</span> size<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">const</span> prompt <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">translate</span><span class="token punctuation">(</span>word<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
 
                 
             </div>
@@ -766,7 +812,7 @@ console<span class="token punctuation">.</span><span class="token function">time
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/011428074.html">http://example.com/2022/011428074.html</a>
+                    <a href="http://example.com/2022/022424686.html">http://example.com/2022/022424686.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -804,12 +850,16 @@ console<span class="token punctuation">.</span><span class="token function">time
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Chrome/">
-                                    <span class="chip bg-color">Chrome</span>
+                                <a href="/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/">
+                                    <span class="chip bg-color">语音识别</span>
                                 </a>
                             
-                                <a href="/tags/Chrome%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/">
-                                    <span class="chip bg-color">Chrome开发技巧</span>
+                                <a href="/tags/%E8%AF%AD%E9%9F%B3%E7%BF%BB%E8%AF%91/">
+                                    <span class="chip bg-color">语音翻译</span>
+                                </a>
+                            
+                                <a href="/tags/AI%E7%94%9F%E6%88%90/">
+                                    <span class="chip bg-color">AI生成</span>
                                 </a>
                             
                         </div>
@@ -1246,13 +1296,13 @@ console<span class="token punctuation">.</span><span class="token function">time
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/022324686.html">
+                <a href="/2022/022424686.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="前端下载base64格式视频">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="前端实时时间">
                         
-                        <span class="card-title">前端下载base64格式视频</span>
+                        <span class="card-title">前端实时时间</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1263,7 +1313,7 @@ console<span class="token punctuation">.</span><span class="token function">time
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-23
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-24
                         </span>
                         <span class="publish-author">
                             
@@ -1280,16 +1330,8 @@ console<span class="token punctuation">.</span><span class="token function">time
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/base64/">
-                        <span class="chip bg-color">base64</span>
-                    </a>
-                    
-                    <a href="/tags/blob/">
-                        <span class="chip bg-color">blob</span>
-                    </a>
-                    
-                    <a href="/tags/%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/">
-                        <span class="chip bg-color">下载视频</span>
+                    <a href="/tags/time/">
+                        <span class="chip bg-color">time</span>
                     </a>
                     
                 </div>
@@ -1303,13 +1345,13 @@ console<span class="token punctuation">.</span><span class="token function">time
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/011422321.html">
+                <a href="/2022/022324686.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="vr场景制作">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="图片涂鸦">
                         
-                        <span class="card-title">vr场景制作</span>
+                        <span class="card-title">图片涂鸦</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1320,14 +1362,14 @@ console<span class="token punctuation">.</span><span class="token function">time
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-23
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/vr%E5%88%B6%E4%BD%9C/" class="post-category">
-                                    vr制作
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
@@ -1337,12 +1379,12 @@ console<span class="token punctuation">.</span><span class="token function">time
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/vr/">
-                        <span class="chip bg-color">vr</span>
+                    <a href="/tags/canvas/">
+                        <span class="chip bg-color">canvas</span>
                     </a>
                     
-                    <a href="/tags/3d/">
-                        <span class="chip bg-color">3d</span>
+                    <a href="/tags/%E6%B6%82%E9%B8%A6/">
+                        <span class="chip bg-color">涂鸦</span>
                     </a>
                     
                 </div>
