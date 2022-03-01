@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="图片涂鸦, peng的博客,HTML,CSS,JavaScript,JQuery,vue.js等">
+    <meta name="keywords" content="Leetcode537:复数乘法, peng的博客,HTML,CSS,JavaScript,JQuery,vue.js等">
     <meta name="description" content="本网站是个人兴趣爱好，总结、记录、分享前端工作经验">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>图片涂鸦 | peng的博客</title>
+    <title>Leetcode537:复数乘法 | peng的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="peng的博客" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="peng的博客" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -409,12 +409,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">图片涂鸦</h1>
+                    <h1 class="description center-align post-title">Leetcode537:复数乘法</h1>
                 </div>
             </div>
         </div>
@@ -530,12 +530,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/canvas/">
-                                <span class="chip bg-color">canvas</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%B6%82%E9%B8%A6/">
-                                <span class="chip bg-color">涂鸦</span>
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
                             </a>
                         
                     </div>
@@ -546,8 +542,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                前端
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                学习
                             </a>
                         
                     </div>
@@ -559,28 +555,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-02-23
+                    2022-03-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-02-24
+                    2022-03-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    720
+                    256
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -600,208 +596,27 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="图片涂鸦"><a href="#图片涂鸦" class="headerlink" title="图片涂鸦"></a>图片涂鸦</h1><p>需求：在图片上绘画</p>
-<p>之前接到这个需求，不会就去网上找，发现了这个，亲测可用，挺有意思的，所以今天分享给大家</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>template<span class="token operator">></span>
-  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"container"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"tui-image-editor"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-    <span class="token operator">&lt;</span>button @click<span class="token operator">=</span><span class="token string">"uploadImg"</span><span class="token operator">></span>完成并上传<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span>
-<span class="token operator">&lt;</span>script<span class="token operator">></span>
-<span class="token keyword">import</span> <span class="token string">"tui-image-editor/dist/tui-image-editor.css"</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> <span class="token string">"tui-color-picker/dist/tui-color-picker.css"</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> ImageEditor <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"tui-image-editor"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> locale_zh <span class="token operator">=</span> <span class="token punctuation">{</span>
-  <span class="token comment" spellcheck="true">// override default English locale to your custom</span>
-  Crop<span class="token punctuation">:</span> <span class="token string">"裁剪"</span><span class="token punctuation">,</span>
-  DeleteAll<span class="token punctuation">:</span> <span class="token string">"全部删除"</span><span class="token punctuation">,</span>
-  Delete<span class="token punctuation">:</span> <span class="token string">"删除"</span><span class="token punctuation">,</span>
-  Undo<span class="token punctuation">:</span> <span class="token string">"撤销"</span><span class="token punctuation">,</span>
-  Redo<span class="token punctuation">:</span> <span class="token string">"反撤销"</span><span class="token punctuation">,</span>
-  Reset<span class="token punctuation">:</span> <span class="token string">"重置"</span><span class="token punctuation">,</span>
-  Flip<span class="token punctuation">:</span> <span class="token string">"镜像"</span><span class="token punctuation">,</span>
-  Rotate<span class="token punctuation">:</span> <span class="token string">"旋转"</span><span class="token punctuation">,</span>
-  Draw<span class="token punctuation">:</span> <span class="token string">"画"</span><span class="token punctuation">,</span>
-  Shape<span class="token punctuation">:</span> <span class="token string">"形状标注"</span><span class="token punctuation">,</span>
-  Icon<span class="token punctuation">:</span> <span class="token string">"图标标注"</span><span class="token punctuation">,</span>
-  Text<span class="token punctuation">:</span> <span class="token string">"文字标注"</span><span class="token punctuation">,</span>
-  Mask<span class="token punctuation">:</span> <span class="token string">"遮罩"</span><span class="token punctuation">,</span>
-  Filter<span class="token punctuation">:</span> <span class="token string">"滤镜"</span><span class="token punctuation">,</span>
-  Bold<span class="token punctuation">:</span> <span class="token string">"加粗"</span><span class="token punctuation">,</span>
-  Italic<span class="token punctuation">:</span> <span class="token string">"斜体"</span><span class="token punctuation">,</span>
-  Underline<span class="token punctuation">:</span> <span class="token string">"下划线"</span><span class="token punctuation">,</span>
-  Left<span class="token punctuation">:</span> <span class="token string">"左对齐"</span><span class="token punctuation">,</span>
-  Center<span class="token punctuation">:</span> <span class="token string">"居中"</span><span class="token punctuation">,</span>
-  Right<span class="token punctuation">:</span> <span class="token string">"右对齐"</span><span class="token punctuation">,</span>
-  Color<span class="token punctuation">:</span> <span class="token string">"颜色"</span><span class="token punctuation">,</span>
-  <span class="token string">"Text size"</span><span class="token punctuation">:</span> <span class="token string">"字体大小"</span><span class="token punctuation">,</span>
-  Custom<span class="token punctuation">:</span> <span class="token string">"自定义"</span><span class="token punctuation">,</span>
-  Square<span class="token punctuation">:</span> <span class="token string">"正方形"</span><span class="token punctuation">,</span>
-  Apply<span class="token punctuation">:</span> <span class="token string">"应用"</span><span class="token punctuation">,</span>
-  Cancel<span class="token punctuation">:</span> <span class="token string">"取消"</span><span class="token punctuation">,</span>
-  <span class="token string">"Flip X"</span><span class="token punctuation">:</span> <span class="token string">"X 轴"</span><span class="token punctuation">,</span>
-  <span class="token string">"Flip Y"</span><span class="token punctuation">:</span> <span class="token string">"Y 轴"</span><span class="token punctuation">,</span>
-  Range<span class="token punctuation">:</span> <span class="token string">"区间"</span><span class="token punctuation">,</span>
-  Stroke<span class="token punctuation">:</span> <span class="token string">"描边"</span><span class="token punctuation">,</span>
-  Fill<span class="token punctuation">:</span> <span class="token string">"填充"</span><span class="token punctuation">,</span>
-  Circle<span class="token punctuation">:</span> <span class="token string">"圆"</span><span class="token punctuation">,</span>
-  Triangle<span class="token punctuation">:</span> <span class="token string">"三角"</span><span class="token punctuation">,</span>
-  Rectangle<span class="token punctuation">:</span> <span class="token string">"矩形"</span><span class="token punctuation">,</span>
-  Free<span class="token punctuation">:</span> <span class="token string">"曲线"</span><span class="token punctuation">,</span>
-  Straight<span class="token punctuation">:</span> <span class="token string">"直线"</span><span class="token punctuation">,</span>
-  Arrow<span class="token punctuation">:</span> <span class="token string">"箭头"</span><span class="token punctuation">,</span>
-  <span class="token string">"Arrow-2"</span><span class="token punctuation">:</span> <span class="token string">"箭头2"</span><span class="token punctuation">,</span>
-  <span class="token string">"Arrow-3"</span><span class="token punctuation">:</span> <span class="token string">"箭头3"</span><span class="token punctuation">,</span>
-  <span class="token string">"Star-1"</span><span class="token punctuation">:</span> <span class="token string">"星星1"</span><span class="token punctuation">,</span>
-  <span class="token string">"Star-2"</span><span class="token punctuation">:</span> <span class="token string">"星星2"</span><span class="token punctuation">,</span>
-  Polygon<span class="token punctuation">:</span> <span class="token string">"多边形"</span><span class="token punctuation">,</span>
-  Location<span class="token punctuation">:</span> <span class="token string">"定位"</span><span class="token punctuation">,</span>
-  Heart<span class="token punctuation">:</span> <span class="token string">"心形"</span><span class="token punctuation">,</span>
-  Bubble<span class="token punctuation">:</span> <span class="token string">"气泡"</span><span class="token punctuation">,</span>
-  <span class="token string">"Custom icon"</span><span class="token punctuation">:</span> <span class="token string">"自定义图标"</span><span class="token punctuation">,</span>
-  <span class="token string">"Load Mask Image"</span><span class="token punctuation">:</span> <span class="token string">"加载蒙层图片"</span><span class="token punctuation">,</span>
-  Grayscale<span class="token punctuation">:</span> <span class="token string">"灰度"</span><span class="token punctuation">,</span>
-  Blur<span class="token punctuation">:</span> <span class="token string">"模糊"</span><span class="token punctuation">,</span>
-  Sharpen<span class="token punctuation">:</span> <span class="token string">"锐化"</span><span class="token punctuation">,</span>
-  Emboss<span class="token punctuation">:</span> <span class="token string">"浮雕"</span><span class="token punctuation">,</span>
-  <span class="token string">"Remove White"</span><span class="token punctuation">:</span> <span class="token string">"除去白色"</span><span class="token punctuation">,</span>
-  Distance<span class="token punctuation">:</span> <span class="token string">"距离"</span><span class="token punctuation">,</span>
-  Brightness<span class="token punctuation">:</span> <span class="token string">"亮度"</span><span class="token punctuation">,</span>
-  Noise<span class="token punctuation">:</span> <span class="token string">"噪音"</span><span class="token punctuation">,</span>
-  <span class="token string">"Color Filter"</span><span class="token punctuation">:</span> <span class="token string">"彩色滤镜"</span><span class="token punctuation">,</span>
-  Sepia<span class="token punctuation">:</span> <span class="token string">"棕色"</span><span class="token punctuation">,</span>
-  Sepia2<span class="token punctuation">:</span> <span class="token string">"棕色2"</span><span class="token punctuation">,</span>
-  Invert<span class="token punctuation">:</span> <span class="token string">"负片"</span><span class="token punctuation">,</span>
-  Pixelate<span class="token punctuation">:</span> <span class="token string">"像素化"</span><span class="token punctuation">,</span>
-  Threshold<span class="token punctuation">:</span> <span class="token string">"阈值"</span><span class="token punctuation">,</span>
-  Tint<span class="token punctuation">:</span> <span class="token string">"色调"</span><span class="token punctuation">,</span>
-  Multiply<span class="token punctuation">:</span> <span class="token string">"正片叠底"</span><span class="token punctuation">,</span>
-  Blend<span class="token punctuation">:</span> <span class="token string">"混合色"</span><span class="token punctuation">,</span>
-  <span class="token comment" spellcheck="true">// etc...</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> customTheme <span class="token operator">=</span> <span class="token punctuation">{</span>
-  <span class="token comment" spellcheck="true">// image 坐上角度图片</span>
-  <span class="token string">"common.bi.image"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 在这里换上你喜欢的logo图片</span>
-  <span class="token string">"common.bisize.width"</span><span class="token punctuation">:</span> <span class="token string">"0px"</span><span class="token punctuation">,</span>
-  <span class="token string">"common.bisize.height"</span><span class="token punctuation">:</span> <span class="token string">"0px"</span><span class="token punctuation">,</span>
-  <span class="token string">"common.backgroundImage"</span><span class="token punctuation">:</span> <span class="token string">"none"</span><span class="token punctuation">,</span>
-  <span class="token string">"common.backgroundColor"</span><span class="token punctuation">:</span> <span class="token string">"#f3f4f6"</span><span class="token punctuation">,</span>
-  <span class="token string">"common.border"</span><span class="token punctuation">:</span> <span class="token string">"1px solid #444"</span><span class="token punctuation">,</span>
-
-  <span class="token comment" spellcheck="true">// header</span>
-  <span class="token string">"header.backgroundImage"</span><span class="token punctuation">:</span> <span class="token string">"none"</span><span class="token punctuation">,</span>
-  <span class="token string">"header.backgroundColor"</span><span class="token punctuation">:</span> <span class="token string">"#f3f4f6"</span><span class="token punctuation">,</span>
-  <span class="token string">"header.border"</span><span class="token punctuation">:</span> <span class="token string">"0px"</span><span class="token punctuation">,</span>
-  <span class="token string">"header.display"</span><span class="token punctuation">:</span> <span class="token string">"none"</span><span class="token punctuation">,</span>
-
-  <span class="token comment" spellcheck="true">// load button</span>
-  <span class="token string">"loadButton.backgroundColor"</span><span class="token punctuation">:</span> <span class="token string">"#fff"</span><span class="token punctuation">,</span>
-  <span class="token string">"loadButton.border"</span><span class="token punctuation">:</span> <span class="token string">"1px solid #ddd"</span><span class="token punctuation">,</span>
-  <span class="token string">"loadButton.color"</span><span class="token punctuation">:</span> <span class="token string">"#222"</span><span class="token punctuation">,</span>
-  <span class="token string">"loadButton.fontFamily"</span><span class="token punctuation">:</span> <span class="token string">"NotoSans, sans-serif"</span><span class="token punctuation">,</span>
-  <span class="token string">"loadButton.fontSize"</span><span class="token punctuation">:</span> <span class="token string">"12px"</span><span class="token punctuation">,</span>
-  <span class="token string">"loadButton.display"</span><span class="token punctuation">:</span> <span class="token string">"none"</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 可以直接隐藏掉</span>
-
-  <span class="token comment" spellcheck="true">// download button</span>
-  <span class="token string">"downloadButton.backgroundColor"</span><span class="token punctuation">:</span> <span class="token string">"#fdba3b"</span><span class="token punctuation">,</span>
-  <span class="token string">"downloadButton.border"</span><span class="token punctuation">:</span> <span class="token string">"1px solid #fdba3b"</span><span class="token punctuation">,</span>
-  <span class="token string">"downloadButton.color"</span><span class="token punctuation">:</span> <span class="token string">"#fff"</span><span class="token punctuation">,</span>
-  <span class="token string">"downloadButton.fontFamily"</span><span class="token punctuation">:</span> <span class="token string">"NotoSans, sans-serif"</span><span class="token punctuation">,</span>
-  <span class="token string">"downloadButton.fontSize"</span><span class="token punctuation">:</span> <span class="token string">"12px"</span><span class="token punctuation">,</span>
-  <span class="token string">"downloadButton.display"</span><span class="token punctuation">:</span> <span class="token string">"none"</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 可以直接隐藏掉</span>
-
-  <span class="token comment" spellcheck="true">// icons default</span>
-  <span class="token string">"menu.normalIcon.color"</span><span class="token punctuation">:</span> <span class="token string">"#8a8a8a"</span><span class="token punctuation">,</span>
-  <span class="token string">"menu.activeIcon.color"</span><span class="token punctuation">:</span> <span class="token string">"#555555"</span><span class="token punctuation">,</span>
-  <span class="token string">"menu.disabledIcon.color"</span><span class="token punctuation">:</span> <span class="token string">"#434343"</span><span class="token punctuation">,</span>
-  <span class="token string">"menu.hoverIcon.color"</span><span class="token punctuation">:</span> <span class="token string">"#e9e9e9"</span><span class="token punctuation">,</span>
-  <span class="token string">"submenu.normalIcon.color"</span><span class="token punctuation">:</span> <span class="token string">"#8a8a8a"</span><span class="token punctuation">,</span>
-  <span class="token string">"submenu.activeIcon.color"</span><span class="token punctuation">:</span> <span class="token string">"#e9e9e9"</span><span class="token punctuation">,</span>
-
-  <span class="token string">"menu.iconSize.width"</span><span class="token punctuation">:</span> <span class="token string">"24px"</span><span class="token punctuation">,</span>
-  <span class="token string">"menu.iconSize.height"</span><span class="token punctuation">:</span> <span class="token string">"24px"</span><span class="token punctuation">,</span>
-  <span class="token string">"submenu.iconSize.width"</span><span class="token punctuation">:</span> <span class="token string">"32px"</span><span class="token punctuation">,</span>
-  <span class="token string">"submenu.iconSize.height"</span><span class="token punctuation">:</span> <span class="token string">"32px"</span><span class="token punctuation">,</span>
-
-  <span class="token comment" spellcheck="true">// submenu primary color</span>
-  <span class="token string">"submenu.backgroundColor"</span><span class="token punctuation">:</span> <span class="token string">"#1e1e1e"</span><span class="token punctuation">,</span>
-  <span class="token string">"submenu.partition.color"</span><span class="token punctuation">:</span> <span class="token string">"#858585"</span><span class="token punctuation">,</span>
-
-  <span class="token comment" spellcheck="true">// submenu labels</span>
-  <span class="token string">"submenu.normalLabel.color"</span><span class="token punctuation">:</span> <span class="token string">"#858585"</span><span class="token punctuation">,</span>
-  <span class="token string">"submenu.normalLabel.fontWeight"</span><span class="token punctuation">:</span> <span class="token string">"lighter"</span><span class="token punctuation">,</span>
-  <span class="token string">"submenu.activeLabel.color"</span><span class="token punctuation">:</span> <span class="token string">"#fff"</span><span class="token punctuation">,</span>
-  <span class="token string">"submenu.activeLabel.fontWeight"</span><span class="token punctuation">:</span> <span class="token string">"lighter"</span><span class="token punctuation">,</span>
-
-  <span class="token comment" spellcheck="true">// checkbox style</span>
-  <span class="token string">"checkbox.border"</span><span class="token punctuation">:</span> <span class="token string">"1px solid #ccc"</span><span class="token punctuation">,</span>
-  <span class="token string">"checkbox.backgroundColor"</span><span class="token punctuation">:</span> <span class="token string">"#fff"</span><span class="token punctuation">,</span>
-
-  <span class="token comment" spellcheck="true">// rango style</span>
-  <span class="token string">"range.pointer.color"</span><span class="token punctuation">:</span> <span class="token string">"#fff"</span><span class="token punctuation">,</span>
-  <span class="token string">"range.bar.color"</span><span class="token punctuation">:</span> <span class="token string">"#666"</span><span class="token punctuation">,</span>
-  <span class="token string">"range.subbar.color"</span><span class="token punctuation">:</span> <span class="token string">"#d1d1d1"</span><span class="token punctuation">,</span>
-
-  <span class="token string">"range.disabledPointer.color"</span><span class="token punctuation">:</span> <span class="token string">"#414141"</span><span class="token punctuation">,</span>
-  <span class="token string">"range.disabledBar.color"</span><span class="token punctuation">:</span> <span class="token string">"#282828"</span><span class="token punctuation">,</span>
-  <span class="token string">"range.disabledSubbar.color"</span><span class="token punctuation">:</span> <span class="token string">"#414141"</span><span class="token punctuation">,</span>
-
-  <span class="token string">"range.value.color"</span><span class="token punctuation">:</span> <span class="token string">"#fff"</span><span class="token punctuation">,</span>
-  <span class="token string">"range.value.fontWeight"</span><span class="token punctuation">:</span> <span class="token string">"lighter"</span><span class="token punctuation">,</span>
-  <span class="token string">"range.value.fontSize"</span><span class="token punctuation">:</span> <span class="token string">"11px"</span><span class="token punctuation">,</span>
-  <span class="token string">"range.value.border"</span><span class="token punctuation">:</span> <span class="token string">"1px solid #353535"</span><span class="token punctuation">,</span>
-  <span class="token string">"range.value.backgroundColor"</span><span class="token punctuation">:</span> <span class="token string">"#151515"</span><span class="token punctuation">,</span>
-  <span class="token string">"range.title.color"</span><span class="token punctuation">:</span> <span class="token string">"#fff"</span><span class="token punctuation">,</span>
-  <span class="token string">"range.title.fontWeight"</span><span class="token punctuation">:</span> <span class="token string">"lighter"</span><span class="token punctuation">,</span>
-
-  <span class="token comment" spellcheck="true">// colorpicker style</span>
-  <span class="token string">"colorpicker.button.border"</span><span class="token punctuation">:</span> <span class="token string">"1px solid #1e1e1e"</span><span class="token punctuation">,</span>
-  <span class="token string">"colorpicker.title.color"</span><span class="token punctuation">:</span> <span class="token string">"#fff"</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-  name<span class="token punctuation">:</span><span class="token string">'Setting'</span><span class="token punctuation">,</span>
-  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">{</span>
-      instance<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+                <h1 id="Leetcode1556-千位分隔数"><a href="#Leetcode1556-千位分隔数" class="headerlink" title="Leetcode1556:千位分隔数"></a>Leetcode1556:千位分隔数</h1><p>题目：<br>复数 可以用字符串表示，遵循 “实部+虚部i” 的形式，并满足下述条件：</p>
+<p>实部 是一个整数，取值范围是 [-100, 100]<br>虚部 也是一个整数，取值范围是 [-100, 100]<br>i2 == -1<br>给你两个字符串表示的复数 num1 和 num2 ，请你遵循复数表示形式，返回表示它们乘积的字符串。</p>
+<p>示例 1：<br>输入：num1 = “1+1i”, num2 = “1+1i”<br>输出：”0+2i”<br>解释：(1 + i) * (1 + i) = 1 + i2 + 2 * i = 2i ，你需要将它转换为 0+2i 的形式。</p>
+<p>示例 2：<br>输入：num1 = “1+-1i”, num2 = “1+-1i”<br>输出：”0+-2i”<br>解释：(1 - i) * (1 - i) = 1 + i2 - 2 * i = -2i ，你需要将它转换为 0+-2i 的形式。 
+&nbsp;</p>
+<p>提示：<br>num1 和 num2 都是有效的复数表示。</p>
+<h3 id="解"><a href="#解" class="headerlink" title="解"></a>解</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
+ * @param {string} num1
+ * @param {string} num2
+ * @return {string}
+ */</span>
+<span class="token keyword">var</span> complexNumberMultiply <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> t1 <span class="token operator">=</span> num1<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'+'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    <span class="token keyword">let</span> str1 <span class="token operator">=</span> num1<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'+'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+    <span class="token keyword">let</span> t2 <span class="token operator">=</span> str1<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>str1<span class="token punctuation">.</span>length<span class="token number">-1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token keyword">let</span> t3 <span class="token operator">=</span> num2<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'+'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    <span class="token keyword">let</span> str2 <span class="token operator">=</span> num2<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'+'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+    <span class="token keyword">let</span> t4 <span class="token operator">=</span> str2<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>str2<span class="token punctuation">.</span>length<span class="token number">-1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> t1 <span class="token operator">*</span>t3<span class="token operator">-</span>t2 <span class="token operator">*</span>t4 <span class="token operator">+</span> <span class="token string">'+'</span> <span class="token operator">+</span><span class="token punctuation">(</span>t2 <span class="token operator">*</span>t3<span class="token operator">+</span>t1 <span class="token operator">*</span>t4<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">'i'</span>
     <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>instance <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ImageEditor</span><span class="token punctuation">(</span>
-      document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#tui-image-editor"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-      <span class="token punctuation">{</span>
-        includeUI<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-          loadImage<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            path<span class="token punctuation">:</span> <span class="token punctuation">,</span><span class="token comment" spellcheck="true">//在这里替换你的路径就可以了</span>
-            name<span class="token punctuation">:</span> <span class="token string">"image"</span><span class="token punctuation">,</span>
-          <span class="token punctuation">}</span><span class="token punctuation">,</span>
-          initMenu<span class="token punctuation">:</span> <span class="token string">"draw"</span><span class="token punctuation">,</span>
-          menuBarPosition<span class="token punctuation">:</span> <span class="token string">"bottom"</span><span class="token punctuation">,</span>
-          locale<span class="token punctuation">:</span> locale_zh<span class="token punctuation">,</span>
-          theme<span class="token punctuation">:</span> customTheme<span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-    document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">"tui-image-editor-main"</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    <span class="token function">uploadImg</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">const</span> base64String <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>instance<span class="token punctuation">.</span><span class="token function">toDataURL</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      localStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">'2'</span><span class="token punctuation">,</span>base64String<span class="token punctuation">)</span>
-      <span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'/show'</span><span class="token punctuation">)</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
-
-<span class="token operator">&lt;</span>style lang<span class="token operator">=</span><span class="token string">"css"</span> scoped<span class="token operator">></span>
-<span class="token punctuation">.</span>container <span class="token punctuation">{</span>
-  height<span class="token punctuation">:</span> 95vh<span class="token punctuation">;</span>
-  text<span class="token operator">-</span>align<span class="token punctuation">:</span> center<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">></span>
 </code></pre>
-<p>非原创，找不到原作了，看见请及时联系。</p>
 
                 
             </div>
@@ -828,7 +643,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/022324686.html">http://example.com/2022/022324686.html</a>
+                    <a href="http://example.com/2022/030144393.html">http://example.com/2022/030144393.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -866,12 +681,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/canvas/">
-                                    <span class="chip bg-color">canvas</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%B6%82%E9%B8%A6/">
-                                    <span class="chip bg-color">涂鸦</span>
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
                                 </a>
                             
                         </div>
@@ -1304,17 +1115,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/022428492.html">
+                <a href="/2022/030144393.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="前端下载base64格式视频">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Leetcode537:复数乘法">
                         
-                        <span class="card-title">前端下载base64格式视频</span>
+                        <span class="card-title">Leetcode537:复数乘法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1324,34 +1136,27 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    前端
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    学习
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/base64/">
-                        <span class="chip bg-color">base64</span>
-                    </a>
-                    
-                    <a href="/tags/blob/">
-                        <span class="chip bg-color">blob</span>
-                    </a>
-                    
-                    <a href="/tags/%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/">
-                        <span class="chip bg-color">下载视频</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
@@ -1365,13 +1170,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/011422321.html">
+                <a href="/2022/030144363.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="vr场景制作">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Leetcode999:可以进一步捕获的棋子数">
                         
-                        <span class="card-title">vr场景制作</span>
+                        <span class="card-title">Leetcode999:可以进一步捕获的棋子数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1382,14 +1187,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-01
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/vr%E5%88%B6%E4%BD%9C/" class="post-category">
-                                    vr制作
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    学习
                                 </a>
                             
                             
@@ -1399,12 +1204,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/vr/">
-                        <span class="chip bg-color">vr</span>
-                    </a>
-                    
-                    <a href="/tags/3d/">
-                        <span class="chip bg-color">3d</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
@@ -1555,7 +1356,7 @@
 
             
                 <span style="margin-left: -20px; display: inline">
-                &nbsp;  <i class="fas fa-chart-area"></i>&nbsp;siteTotalWords:&nbsp;<span  class="white-color">7.2k</span>
+                &nbsp;  <i class="fas fa-chart-area"></i>&nbsp;siteTotalWords:&nbsp;<span  class="white-color">8.2k</span>
                 <span/>
             
 
@@ -1565,12 +1366,12 @@
             
             
                 <span id="busuanzi_container_site_pv3" style="display: inline">
-                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;siteTotalVisits:&nbsp;<span id="busuanzi_value_site_pv" class="white-color">7.2k</span>
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;siteTotalVisits:&nbsp;<span id="busuanzi_value_site_pv" class="white-color">8.2k</span>
                 </span>
             
             
                 <span id="busuanzi_container_site_uv3" style="display: inline">
-                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;siteTotalVisitors:&nbsp;<span id="busuanzi_value_site_uv" class="white-color">7.2k</span>
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;siteTotalVisitors:&nbsp;<span id="busuanzi_value_site_uv" class="white-color">8.2k</span>
                 </span>
             
             <br>

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="前端实现语音识别、语音翻译, peng的博客,HTML,CSS,JavaScript,JQuery,vue.js等">
+    <meta name="keywords" content="Leetcode999:可以进一步捕获的棋子数, peng的博客,HTML,CSS,JavaScript,JQuery,vue.js等">
     <meta name="description" content="本网站是个人兴趣爱好，总结、记录、分享前端工作经验">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>前端实现语音识别、语音翻译 | peng的博客</title>
+    <title>Leetcode999:可以进一步捕获的棋子数 | peng的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -409,12 +409,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">前端实现语音识别、语音翻译</h1>
+                    <h1 class="description center-align post-title">Leetcode999:可以进一步捕获的棋子数</h1>
                 </div>
             </div>
         </div>
@@ -530,16 +530,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/">
-                                <span class="chip bg-color">语音识别</span>
-                            </a>
-                        
-                            <a href="/tags/%E8%AF%AD%E9%9F%B3%E7%BF%BB%E8%AF%91/">
-                                <span class="chip bg-color">语音翻译</span>
-                            </a>
-                        
-                            <a href="/tags/AI%E7%94%9F%E6%88%90/">
-                                <span class="chip bg-color">AI生成</span>
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
                             </a>
                         
                     </div>
@@ -550,8 +542,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/AI%E7%94%9F%E6%88%90/" class="post-category">
-                                AI生成
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                学习
                             </a>
                         
                     </div>
@@ -563,28 +555,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-02-25
+                    2022-03-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-02-25
+                    2022-03-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    686
+                    586
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    2 分
                 </div>
                 
 
@@ -604,187 +596,74 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="前端实现语音识别、语音翻译"><a href="#前端实现语音识别、语音翻译" class="headerlink" title="前端实现语音识别、语音翻译"></a>前端实现语音识别、语音翻译</h1><p>需求：用户说一段话，转译英文</p>
-<h2 id="一、录音"><a href="#一、录音" class="headerlink" title="一、录音"></a>一、录音</h2><h3 id="使用的是js-audio-recorder"><a href="#使用的是js-audio-recorder" class="headerlink" title="使用的是js-audio-recorder"></a>使用的是js-audio-recorder</h3><p>另我这个里面有些东西是不需要的，因为我有个录音波浪图的功能，大家可忽略</p>
-<pre class=" language-javascript"><code class="language-javascript">   <span class="token keyword">let</span> recorder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Recorder</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  sampleBits<span class="token punctuation">:</span> <span class="token number">16</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 采样位数，支持 8 或 16，默认是16</span>
-  sampleRate<span class="token punctuation">:</span> <span class="token number">16000</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 采样率，支持 11025、16000、22050、24000、44100、48000</span>
-  numChannels<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 声道，支持 1 或 2， 默认是1</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">/**
-     *  录音的具体操作功能
-     * */</span>
-    <span class="token comment" spellcheck="true">// 开始录音</span>
-    <span class="token function">startRecorder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      recorder<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>
-        <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">drawRecord</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//开始绘制图片</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>error<span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> : </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>error<span class="token punctuation">.</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <h1 id="Leetcode1556-千位分隔数"><a href="#Leetcode1556-千位分隔数" class="headerlink" title="Leetcode1556:千位分隔数"></a>Leetcode1556:千位分隔数</h1><p>题目：在一个 8 x 8 的棋盘上，有一个白色的车（Rook），用字符 ‘R’ 表示。棋盘上还可能存在空方块，白色的象（Bishop）以及黑色的卒（pawn），分别用字符 ‘.’，’B’ 和 ‘p’ 表示。不难看出，大写字符表示的是白棋，小写字符表示的是黑棋。</p>
+<p>车按国际象棋中的规则移动。东，西，南，北四个基本方向任选其一，然后一直向选定的方向移动，直到满足下列四个条件之一：</p>
+<p>棋手选择主动停下来。<br>棋子因到达棋盘的边缘而停下。<br>棋子移动到某一方格来捕获位于该方格上敌方（黑色）的卒，停在该方格内。<br>车不能进入/越过已经放有其他友方棋子（白色的象）的方格，停在友方棋子前。<br>你现在可以控制车移动一次，请你统计有多少敌方的卒处于你的捕获范围内（即，可以被一步捕获的棋子数）。</p>
+<p>&nbsp;<br>示例 1：<br>输入：[[“.”,”.”,”.”,”.”,”.”,”.”,”.”,”.”],[“.”,”.”,”.”,”p”,”.”,”.”,”.”,”.”],[“.”,”.”,”.”,”R”,”.”,”.”,”.”,”p”],[“.”,”.”,”.”,”.”,”.”,”.”,”.”,”.”],[“.”,”.”,”.”,”.”,”.”,”.”,”.”,”.”],[“.”,”.”,”.”,”p”,”.”,”.”,”.”,”.”],[“.”,”.”,”.”,”.”,”.”,”.”,”.”,”.”],[“.”,”.”,”.”,”.”,”.”,”.”,”.”,”.”]]<br>输出：3<br>解释：<br>在本例中，车能够捕获所有的卒。</p>
+<p>示例 2：<br>输入：[[“.”,”.”,”.”,”.”,”.”,”.”,”.”,”.”],[“.”,”p”,”p”,”p”,”p”,”p”,”.”,”.”],[“.”,”p”,”p”,”B”,”p”,”p”,”.”,”.”],[“.”,”p”,”B”,”R”,”B”,”p”,”.”,”.”],[“.”,”p”,”p”,”B”,”p”,”p”,”.”,”.”],[“.”,”p”,”p”,”p”,”p”,”p”,”.”,”.”],[“.”,”.”,”.”,”.”,”.”,”.”,”.”,”.”],[“.”,”.”,”.”,”.”,”.”,”.”,”.”,”.”]]<br>输出：0<br>解释：<br>象阻止了车捕获任何卒。</p>
+<h3 id="解"><a href="#解" class="headerlink" title="解"></a>解</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
+ * @param {character[][]} board
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> numRookCaptures <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>board<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">7</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> <span class="token number">7</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"R"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> y <span class="token operator">=</span> j<span class="token punctuation">;</span> y <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">;</span> y<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"B"</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"p"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> y <span class="token operator">=</span> j<span class="token punctuation">;</span> y <span class="token operator">&lt;=</span> <span class="token number">7</span><span class="token punctuation">;</span> y<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"B"</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"p"</span><span class="token punctuation">)</span><span class="token punctuation">{</span>num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> i<span class="token punctuation">;</span> x <span class="token operator">&lt;=</span> <span class="token number">7</span><span class="token punctuation">;</span> x<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"B"</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"p"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> i<span class="token punctuation">;</span> x <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">;</span> x<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"B"</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"p"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
         <span class="token punctuation">}</span>
-      <span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token comment" spellcheck="true">// 结束录音</span>
-    <span class="token function">stopRecorder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      recorder<span class="token punctuation">.</span><span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token keyword">this</span><span class="token punctuation">.</span>drawRecordId <span class="token operator">&amp;&amp;</span> <span class="token function">cancelAnimationFrame</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>drawRecordId<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token keyword">this</span><span class="token punctuation">.</span>drawRecordId <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token comment" spellcheck="true">// 录音播放</span>
-    <span class="token function">playRecorder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      recorder<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">drawPlay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//绘制波浪图</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token comment" spellcheck="true">// 停止录音播放</span>
-    <span class="token function">stopPlayRecorder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      recorder<span class="token punctuation">.</span><span class="token function">stopPlay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token comment" spellcheck="true">// 销毁录音</span>
-    <span class="token function">destroyRecorder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      recorder<span class="token punctuation">.</span><span class="token function">destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        recorder <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>drawRecordId <span class="token operator">&amp;&amp;</span> <span class="token function">cancelAnimationFrame</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>drawRecordId<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>drawRecordId <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-</code></pre>
-<h2 id="二、blobtoBase64"><a href="#二、blobtoBase64" class="headerlink" title="二、blobtoBase64"></a>二、blobtoBase64</h2><p>因百度ai接口需要base64格式编码，需转一下格式</p>
-<pre class=" language-javascript"><code class="language-javascript">    <span class="token comment" spellcheck="true">/**
-     * blob二进制 to base64
-     **/</span>
-    <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">blobToBase64</span><span class="token punctuation">(</span>blob<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span> reject<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-        <span class="token keyword">const</span> fileReader <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileReader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        fileReader<span class="token punctuation">.</span>onload <span class="token operator">=</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-          <span class="token function">resolve</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// readAsDataURL</span>
-        fileReader<span class="token punctuation">.</span><span class="token function">readAsDataURL</span><span class="token punctuation">(</span>blob<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        fileReader<span class="token punctuation">.</span>onerror <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-          <span class="token function">reject</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'blobToBase64 error'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-</code></pre>
-<h2 id="三、调用百度语音识别接口"><a href="#三、调用百度语音识别接口" class="headerlink" title="三、调用百度语音识别接口"></a>三、调用百度语音识别接口</h2><p>先简单处理一下跨域问题</p>
-<pre class=" language-javascript"><code class="language-javascript">      <span class="token string">'/oauth'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        target<span class="token punctuation">:</span> <span class="token string">'https://aip.baidubce.com'</span><span class="token punctuation">,</span>
-        secure<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-        pathRewrite<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-          <span class="token string">'^/oauth'</span> <span class="token punctuation">:</span> <span class="token string">'/oauth'</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        changeOrigin<span class="token punctuation">:</span> <span class="token boolean">true</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-</code></pre>
-<p>识别接口里有个参数token，所以需先获取token</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
- *  处理录音识别
- **/</span>
-
-<span class="token keyword">import</span> request <span class="token keyword">from</span> <span class="token string">'@/api/request'</span>
-<span class="token keyword">const</span> tokenUrl <span class="token operator">=</span> <span class="token string">"/oauth/2.0/token"</span><span class="token punctuation">;</span> 
-<span class="token keyword">const</span> urlInfo <span class="token operator">=</span> <span class="token string">"/server_api"</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> API_KEY <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//自己去官网上开通服务，拿到 API_KEY</span>
-<span class="token keyword">const</span> SECRET_KEY <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//自己去官网上开通服务，拿到  SECRET_KEY</span>
-<span class="token keyword">const</span> myurl <span class="token operator">=</span>
-  tokenUrl <span class="token operator">+</span>
-  <span class="token string">"?grant_type=client_credentials"</span> <span class="token operator">+</span>
-  <span class="token string">"&amp;client_id="</span> <span class="token operator">+</span>
-  API_KEY <span class="token operator">+</span>
-  <span class="token string">"&amp;client_secret="</span> <span class="token operator">+</span>
-  SECRET_KEY<span class="token punctuation">;</span>
-
-<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">identify</span><span class="token punctuation">(</span>blob<span class="token punctuation">,</span> size<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> request<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span>myurl<span class="token punctuation">)</span>
-  <span class="token keyword">let</span> access_token <span class="token operator">=</span> res<span class="token punctuation">.</span>access_token<span class="token punctuation">;</span>
-    <span class="token keyword">let</span> speech <span class="token operator">=</span> blob<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"data:audio/wav;base64,"</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token keyword">let</span> formData <span class="token operator">=</span> <span class="token punctuation">{</span>
-      format<span class="token punctuation">:</span> <span class="token string">"wav"</span><span class="token punctuation">,</span>
-      rate<span class="token punctuation">:</span> <span class="token number">16000</span><span class="token punctuation">,</span>
-      dev_pid<span class="token punctuation">:</span> <span class="token number">1537</span><span class="token punctuation">,</span>
-      channel<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
-      token<span class="token punctuation">:</span> access_token<span class="token punctuation">,</span>
-      cuid<span class="token punctuation">:</span> <span class="token string">"baidu_workshop"</span><span class="token punctuation">,</span>
-      len<span class="token punctuation">:</span> size<span class="token punctuation">,</span>
-      speech<span class="token punctuation">:</span> speech<span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-    <span class="token keyword">const</span> r <span class="token operator">=</span> <span class="token keyword">await</span> request<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span>urlInfo<span class="token punctuation">,</span> formData<span class="token punctuation">)</span>
-    <span class="token keyword">let</span> basic <span class="token operator">=</span> r<span class="token punctuation">.</span>result<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token keyword">let</span> newBasic <span class="token operator">=</span> basic<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> basic<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> newBasic
-
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="四、调用百度语音翻译接口"><a href="#四、调用百度语音翻译接口" class="headerlink" title="四、调用百度语音翻译接口"></a>四、调用百度语音翻译接口</h2><p>同识别接口差不多，解决跨域问题再请求，不对，应该是先请求出现跨域问题再解决。</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
- *  处理语音翻译
- **/</span>
- <span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">"axios"</span><span class="token punctuation">;</span>
- <span class="token keyword">import</span> md5 <span class="token keyword">from</span> <span class="token string">"js-md5"</span><span class="token punctuation">;</span>
-
-
- <span class="token keyword">const</span> request <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-    baseURL<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-    headers<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        <span class="token string">"Content-Type"</span><span class="token punctuation">:</span> <span class="token string">"application/x-www-form-urlencoded"</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  
-
- <span class="token keyword">let</span> appid <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//去官网获取</span>
- <span class="token keyword">let</span> key <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//去官网获取</span>
- <span class="token keyword">let</span> salt <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
- <span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token string">"/api/trans/vip/translate"</span><span class="token punctuation">;</span>
- <span class="token keyword">let</span> form <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FormData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
- <span class="token keyword">let</span> <span class="token keyword">from</span> <span class="token operator">=</span> <span class="token string">"zh"</span><span class="token punctuation">;</span>
- <span class="token keyword">let</span> to <span class="token operator">=</span> <span class="token string">"en"</span><span class="token punctuation">;</span>
-
- <span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">translate</span><span class="token punctuation">(</span>word<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">let</span> query <span class="token operator">=</span> word<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 多个query可以用\n连接  如 query='apple\norange\nbanana\npear'</span>
-    <span class="token keyword">let</span> str1 <span class="token operator">=</span> appid <span class="token operator">+</span> query <span class="token operator">+</span> salt <span class="token operator">+</span> key<span class="token punctuation">;</span>
-    <span class="token keyword">let</span> sign <span class="token operator">=</span> <span class="token function">md5</span><span class="token punctuation">(</span>str1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">const</span> myurl <span class="token operator">=</span>
-      url <span class="token operator">+</span>
-      <span class="token string">"?appid="</span> <span class="token operator">+</span>
-      appid <span class="token operator">+</span>
-      <span class="token string">"&amp;from="</span> <span class="token operator">+</span>
-      <span class="token keyword">from</span> <span class="token operator">+</span>
-      <span class="token string">"&amp;to="</span> <span class="token operator">+</span>
-      to <span class="token operator">+</span>
-      <span class="token string">"&amp;salt="</span> <span class="token operator">+</span>
-      salt <span class="token operator">+</span>
-      <span class="token string">"&amp;sign="</span> <span class="token operator">+</span>
-      sign<span class="token punctuation">;</span>
-    form<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"q"</span><span class="token punctuation">,</span> query<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  
-    <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> request<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span>myurl<span class="token punctuation">,</span> form<span class="token punctuation">)</span>
-    <span class="token keyword">let</span> prompt <span class="token operator">=</span> res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>trans_result<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dst<span class="token punctuation">;</span>
-    localStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">"prompt"</span><span class="token punctuation">,</span> prompt<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> prompt
-  <span class="token punctuation">}</span>
-  
-</code></pre>
-<pre class=" language-javascript"><code class="language-javascript">      <span class="token string">'/api'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        target<span class="token punctuation">:</span> <span class="token string">'http://api.fanyi.baidu.com'</span><span class="token punctuation">,</span>
-        secure<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-        pathRewrite<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-          <span class="token string">'^/api'</span> <span class="token punctuation">:</span> <span class="token string">'/api'</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        changeOrigin<span class="token punctuation">:</span> <span class="token boolean">true</span>
       <span class="token punctuation">}</span>
+<span class="token keyword">return</span> num<span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<h2 id="三、调用"><a href="#三、调用" class="headerlink" title="三、调用"></a>三、调用</h2><p>调用即可 word为中文，prompt为英文</p>
-<pre class=" language-javascript"><code class="language-javascript">    <span class="token comment" spellcheck="true">/**
-     *  处理录音识别,语音翻译
-     **/</span>
-    <span class="token keyword">async</span> <span class="token function">identify</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">let</span> file <span class="token operator">=</span> recorder<span class="token punctuation">.</span><span class="token function">getWAVBlob</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token keyword">let</span> size <span class="token operator">=</span> file<span class="token punctuation">.</span>size<span class="token punctuation">;</span>
-      <span class="token keyword">const</span> blob <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">blobToBase64</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token keyword">const</span> word <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">identify</span><span class="token punctuation">(</span>blob<span class="token punctuation">,</span> size<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token keyword">const</span> prompt <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">translate</span><span class="token punctuation">(</span>word<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
+ * @param {character[][]} board
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> numRookCaptures <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>board<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> a <span class="token operator">&lt;=</span> <span class="token number">7</span><span class="token punctuation">;</span> a<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span><span class="token punctuation">(</span>board<span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'R'</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+              <span class="token keyword">var</span> i <span class="token operator">=</span> a<span class="token punctuation">;</span>
+              <span class="token keyword">var</span> j <span class="token operator">=</span> board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'R'</span><span class="token punctuation">)</span>
+          <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> y <span class="token operator">=</span> j<span class="token punctuation">;</span> y <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">;</span> y<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"B"</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"p"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>num <span class="token operator">++</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> y <span class="token operator">=</span> j<span class="token punctuation">;</span> y <span class="token operator">&lt;=</span> <span class="token number">7</span><span class="token punctuation">;</span> y<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"B"</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"p"</span><span class="token punctuation">)</span><span class="token punctuation">{</span>num <span class="token operator">++</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> i<span class="token punctuation">;</span> x <span class="token operator">&lt;=</span> <span class="token number">7</span><span class="token punctuation">;</span> x<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"B"</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"p"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>num <span class="token operator">++</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> i<span class="token punctuation">;</span> x <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">;</span> x<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"B"</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"p"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>num <span class="token operator">++</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+<span class="token keyword">return</span> num<span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
 
                 
@@ -812,7 +691,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/022532962.html">http://example.com/2022/022532962.html</a>
+                    <a href="http://example.com/2022/030144363.html">http://example.com/2022/030144363.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -850,16 +729,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/">
-                                    <span class="chip bg-color">语音识别</span>
-                                </a>
-                            
-                                <a href="/tags/%E8%AF%AD%E9%9F%B3%E7%BF%BB%E8%AF%91/">
-                                    <span class="chip bg-color">语音翻译</span>
-                                </a>
-                            
-                                <a href="/tags/AI%E7%94%9F%E6%88%90/">
-                                    <span class="chip bg-color">AI生成</span>
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
                                 </a>
                             
                         </div>
@@ -1296,13 +1167,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/022644788.html">
+                <a href="/2022/030144393.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="前端实时时间">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Leetcode537:复数乘法">
                         
-                        <span class="card-title">前端实时时间</span>
+                        <span class="card-title">Leetcode537:复数乘法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1313,14 +1184,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-26
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-01
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    前端
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    学习
                                 </a>
                             
                             
@@ -1330,8 +1201,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/time/">
-                        <span class="chip bg-color">time</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
@@ -1345,13 +1216,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/022428492.html">
+                <a href="/2022/030144343.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="前端下载base64格式视频">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Leetcode1556:千位分隔数">
                         
-                        <span class="card-title">前端下载base64格式视频</span>
+                        <span class="card-title">Leetcode1556:千位分隔数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1362,14 +1233,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-01
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    前端
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    学习
                                 </a>
                             
                             
@@ -1379,16 +1250,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/base64/">
-                        <span class="chip bg-color">base64</span>
-                    </a>
-                    
-                    <a href="/tags/blob/">
-                        <span class="chip bg-color">blob</span>
-                    </a>
-                    
-                    <a href="/tags/%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/">
-                        <span class="chip bg-color">下载视频</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
