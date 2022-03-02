@@ -30,9 +30,9 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="peng的博客" type="application/atom+xml">
-
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</head>
 
 
 
@@ -577,7 +577,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    197
+                    227
                 </div>
                 
 
@@ -608,31 +608,31 @@
 <h2 id="一、base64转blob"><a href="#一、base64转blob" class="headerlink" title="一、base64转blob"></a>一、base64转blob</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
  *  base64 to Blob
  **/</span>
-<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">base64toBlob</span><span class="token punctuation">(</span>base64Data<span class="token punctuation">,</span> contentType <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">,</span> sliceSize <span class="token operator">=</span> <span class="token number">512</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">base64toBlob</span><span class="token punctuation">(</span>base64Data<span class="token punctuation">,</span> contentType <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">,</span> sliceSize <span class="token operator">=</span> <span class="token number">512</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
   <span class="token keyword">const</span> byteCharacters <span class="token operator">=</span> <span class="token function">atob</span><span class="token punctuation">(</span>base64Data<span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token keyword">const</span> byteArrays <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
   <span class="token keyword">for</span> <span class="token punctuation">(</span>
     <span class="token keyword">let</span> offset <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> offset <span class="token operator">&lt;</span> byteCharacters<span class="token punctuation">.</span>length<span class="token punctuation">;</span> offset <span class="token operator">+</span><span class="token operator">=</span> sliceSize
-  <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">const</span> slice <span class="token operator">=</span> byteCharacters<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>offset<span class="token punctuation">,</span> offset <span class="token operator">+</span> sliceSize<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">const</span> byteNumbers <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span>slice<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> slice<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> slice<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
       byteNumbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> slice<span class="token punctuation">.</span><span class="token function">charCodeAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
     <span class="token keyword">const</span> byteArray <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Uint8Array</span><span class="token punctuation">(</span>byteNumbers<span class="token punctuation">)</span><span class="token punctuation">;</span>
     byteArrays<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>byteArray<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-  <span class="token keyword">const</span> blob <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Blob</span><span class="token punctuation">(</span>byteArrays<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> blob <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Blob</span><span class="token punctuation">(</span>byteArrays<span class="token punctuation">,</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     type<span class="token punctuation">:</span> contentType
-  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token keyword">return</span> blob<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 <h2 id="二、下载blob视频"><a href="#二、下载blob视频" class="headerlink" title="二、下载blob视频"></a>二、下载blob视频</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
  *  下载视频
  **/</span>
-<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">download</span><span class="token punctuation">(</span>blob<span class="token punctuation">,</span> filename<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">"download"</span> <span class="token keyword">in</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">download</span><span class="token punctuation">(</span>blob<span class="token punctuation">,</span> filename<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">"download"</span> <span class="token keyword">in</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">const</span> elink <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     elink<span class="token punctuation">.</span>download <span class="token operator">=</span> filename<span class="token punctuation">;</span>
     elink<span class="token punctuation">.</span>style<span class="token punctuation">.</span>display <span class="token operator">=</span> <span class="token string">"none"</span><span class="token punctuation">;</span>
@@ -641,13 +641,13 @@
     elink<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     URL<span class="token punctuation">.</span><span class="token function">revokeObjectURL</span><span class="token punctuation">(</span>elink<span class="token punctuation">.</span>href<span class="token punctuation">)</span><span class="token punctuation">;</span>
     document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>elink<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     navigator<span class="token punctuation">.</span><span class="token function">msSaveBlob</span><span class="token punctuation">(</span>blob<span class="token punctuation">,</span> filename<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 <p>调用一下就哦可了</p>
-<pre class=" language-javascript"><code class="language-javascript">    <span class="token keyword">async</span> <span class="token function">downloadVideo</span><span class="token punctuation">(</span>cache_key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<pre class=" language-javascript"><code class="language-javascript">    <span class="token keyword">async</span> <span class="token function">downloadVideo</span><span class="token punctuation">(</span>cache_key<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
       <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> api<span class="token punctuation">.</span><span class="token function">getAnimation</span><span class="token punctuation">(</span>cache_key<span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token keyword">let</span> filecontent <span class="token operator">=</span> res<span class="token punctuation">.</span>result<span class="token punctuation">.</span>filecontent<span class="token punctuation">;</span>
       <span class="token keyword">let</span> filename <span class="token operator">=</span> res<span class="token punctuation">.</span>result<span class="token punctuation">.</span>filename<span class="token punctuation">;</span>
@@ -1412,7 +1412,7 @@
 
             
                 <span style="margin-left: -20px; display: inline">
-                &nbsp;  <i class="fas fa-chart-area"></i>&nbsp;siteTotalWords:&nbsp;<span  class="white-color">8.2k</span>
+                &nbsp;  <i class="fas fa-chart-area"></i>&nbsp;siteTotalWords:&nbsp;<span  class="white-color">9k</span>
                 <span/>
             
 
@@ -1422,12 +1422,12 @@
             
             
                 <span id="busuanzi_container_site_pv3" style="display: inline">
-                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;siteTotalVisits:&nbsp;<span id="busuanzi_value_site_pv" class="white-color">8.2k</span>
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;siteTotalVisits:&nbsp;<span id="busuanzi_value_site_pv" class="white-color">9k</span>
                 </span>
             
             
                 <span id="busuanzi_container_site_uv3" style="display: inline">
-                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;siteTotalVisitors:&nbsp;<span id="busuanzi_value_site_uv" class="white-color">8.2k</span>
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;siteTotalVisitors:&nbsp;<span id="busuanzi_value_site_uv" class="white-color">9k</span>
                 </span>
             
             <br>

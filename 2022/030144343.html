@@ -30,9 +30,9 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="peng的博客" type="application/atom+xml">
-
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</head>
 
 
 
@@ -569,7 +569,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    139
+                    184
                 </div>
                 
 
@@ -600,32 +600,32 @@
 <p>示例 1：<br>输入：n = 987<br>输出：”987”</p>
 <p>示例 2：<br>输入：n = 123456789<br>输出：”123.456.789”</p>
 <h3 id="解一"><a href="#解一" class="headerlink" title="解一"></a>解一</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
- * @param {number} n
- * @return {string}
+ * @param &amp;#123;number&amp;#125; n
+ * @return &amp;#123;string&amp;#125;
  */</span>
-<span class="token keyword">var</span> thousandSeparator <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> n<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex">/\B(?=(\d{3})+(?!\d))/g</span><span class="token punctuation">,</span><span class="token string">'.'</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> thousandSeparator <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> n<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex">/\B(?=(\d&amp;#123;3&amp;#125;)+(?!\d))/g</span><span class="token punctuation">,</span><span class="token string">'.'</span><span class="token punctuation">)</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="解二"><a href="#解二" class="headerlink" title="解二"></a>解二</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
- * @param {number} n
- * @return {string}
+ * @param &amp;#123;number&amp;#125; n
+ * @return &amp;#123;string&amp;#125;
  */</span>
-<span class="token keyword">var</span> thousandSeparator <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">var</span> thousandSeparator <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">let</span> arr <span class="token operator">=</span> n<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> arr<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">></span><span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">=</span> i <span class="token operator">-</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> arr<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">=</span> i <span class="token operator">-</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         arr<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token string">'.'</span><span class="token punctuation">)</span>
-    <span class="token punctuation">}</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 <span class="token keyword">return</span> arr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="解三"><a href="#解三" class="headerlink" title="解三"></a>解三</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
- * @param {number} n
- * @return {string}
+ * @param &amp;#123;number&amp;#125; n
+ * @return &amp;#123;string&amp;#125;
  */</span>
-<span class="token keyword">var</span> thousandSeparator <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">var</span> thousandSeparator <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> n<span class="token punctuation">.</span><span class="token function">toLocaleString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex">/,/g</span><span class="token punctuation">,</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
 </code></pre>
 
                 
@@ -1364,7 +1364,7 @@
 
             
                 <span style="margin-left: -20px; display: inline">
-                &nbsp;  <i class="fas fa-chart-area"></i>&nbsp;siteTotalWords:&nbsp;<span  class="white-color">8.2k</span>
+                &nbsp;  <i class="fas fa-chart-area"></i>&nbsp;siteTotalWords:&nbsp;<span  class="white-color">9k</span>
                 <span/>
             
 
@@ -1374,12 +1374,12 @@
             
             
                 <span id="busuanzi_container_site_pv3" style="display: inline">
-                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;siteTotalVisits:&nbsp;<span id="busuanzi_value_site_pv" class="white-color">8.2k</span>
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;siteTotalVisits:&nbsp;<span id="busuanzi_value_site_pv" class="white-color">9k</span>
                 </span>
             
             
                 <span id="busuanzi_container_site_uv3" style="display: inline">
-                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;siteTotalVisitors:&nbsp;<span id="busuanzi_value_site_uv" class="white-color">8.2k</span>
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;siteTotalVisitors:&nbsp;<span id="busuanzi_value_site_uv" class="white-color">9k</span>
                 </span>
             
             <br>

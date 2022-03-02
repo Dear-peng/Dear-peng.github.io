@@ -30,9 +30,9 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="peng的博客" type="application/atom+xml">
-
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</head>
 
 
 
@@ -569,7 +569,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    184
+                    201
                 </div>
                 
 
@@ -601,7 +601,7 @@
      *  处理时间
      **/</span>
 
-   <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">nowTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">nowTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">let</span> myDate <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token comment" spellcheck="true">// console.log(myDate)</span>
     <span class="token keyword">let</span> wk <span class="token operator">=</span> myDate<span class="token punctuation">.</span><span class="token function">getDay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -636,24 +636,24 @@
     <span class="token keyword">let</span> nowDate <span class="token operator">=</span> yy <span class="token operator">+</span> <span class="token string">"-"</span> <span class="token operator">+</span> mm <span class="token operator">+</span> <span class="token string">"-"</span> <span class="token operator">+</span> dd<span class="token punctuation">;</span>
     <span class="token keyword">let</span> nowTime <span class="token operator">=</span> hou <span class="token operator">+</span> <span class="token string">":"</span> <span class="token operator">+</span> min <span class="token operator">+</span> <span class="token string">":"</span> <span class="token operator">+</span> sec<span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token punctuation">[</span>nowDate<span class="token punctuation">,</span>nowTime<span class="token punctuation">,</span>nowweek<span class="token punctuation">]</span>
-  <span class="token punctuation">}</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="调用即可"><a href="#调用即可" class="headerlink" title="调用即可"></a>调用即可</h3><pre class=" language-javascript"><code class="language-javascript">    <span class="token comment" spellcheck="true">/**
      *  获取时间
      **/</span>
-    <span class="token function">setNowTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>timer <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">async</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    <span class="token function">setNowTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>timer <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">async</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
       <span class="token keyword">const</span> res <span class="token operator">=</span><span class="token keyword">await</span> <span class="token function">nowTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token keyword">this</span><span class="token punctuation">.</span>nowDate <span class="token operator">=</span> res<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
       <span class="token keyword">this</span><span class="token punctuation">.</span>nowTime <span class="token operator">=</span> res<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
       <span class="token keyword">this</span><span class="token punctuation">.</span>nowWeek <span class="token operator">=</span> res<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
 </code></pre>
-<h3 id="记得离开页面销毁"><a href="#记得离开页面销毁" class="headerlink" title="记得离开页面销毁"></a>记得离开页面销毁</h3><pre class=" language-javascript"><code class="language-javascript">  <span class="token function">beforeDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<h3 id="记得离开页面销毁"><a href="#记得离开页面销毁" class="headerlink" title="记得离开页面销毁"></a>记得离开页面销毁</h3><pre class=" language-javascript"><code class="language-javascript">  <span class="token function">beforeDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
   <span class="token function">clearInterval</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token keyword">this</span><span class="token punctuation">.</span>timer <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 
                 
@@ -1400,7 +1400,7 @@
 
             
                 <span style="margin-left: -20px; display: inline">
-                &nbsp;  <i class="fas fa-chart-area"></i>&nbsp;siteTotalWords:&nbsp;<span  class="white-color">8.2k</span>
+                &nbsp;  <i class="fas fa-chart-area"></i>&nbsp;siteTotalWords:&nbsp;<span  class="white-color">9k</span>
                 <span/>
             
 
@@ -1410,12 +1410,12 @@
             
             
                 <span id="busuanzi_container_site_pv3" style="display: inline">
-                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;siteTotalVisits:&nbsp;<span id="busuanzi_value_site_pv" class="white-color">8.2k</span>
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;siteTotalVisits:&nbsp;<span id="busuanzi_value_site_pv" class="white-color">9k</span>
                 </span>
             
             
                 <span id="busuanzi_container_site_uv3" style="display: inline">
-                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;siteTotalVisitors:&nbsp;<span id="busuanzi_value_site_uv" class="white-color">8.2k</span>
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;siteTotalVisitors:&nbsp;<span id="busuanzi_value_site_uv" class="white-color">9k</span>
                 </span>
             
             <br>

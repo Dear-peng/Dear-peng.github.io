@@ -30,9 +30,9 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="peng的博客" type="application/atom+xml">
-
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</head>
 
 
 
@@ -694,20 +694,20 @@
 <img src="/2022/011436274/image.jpg" class="">
 
 <p>根据 <a target="_blank" rel="noopener" href="http://know.webhek.com/svg/svg-blur-effects.html">SVG 的教程</a> 中的介绍，SVG 滤镜主要使用了<defs> 和<filter> 标记。保存一个名为 blur.svg 的SVG 文件，文件内容如下：</filter></defs></p>
-<pre class=" language-html"><code class="language-html"><span class="token prolog">&lt;?xml version="1.0" encoding="utf-8"?></span>
-<span class="token doctype">&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"></span> 
+<pre class=" language-html"><code class="language-html"><span class="token prolog">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="token doctype">&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"&gt;</span> 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">version</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1.1<span class="token punctuation">"</span></span>      
      <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span>     
      <span class="token attr-name"><span class="token namespace">xmlns:</span>xlink</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://www.w3.org/1999/xlink<span class="token punctuation">"</span></span>     
      <span class="token attr-name"><span class="token namespace">xmlns:</span>ev</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://www.w3.org/2001/xml-events<span class="token punctuation">"</span></span>          
-     <span class="token attr-name">baseProfile</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>full<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>     
-         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>defs</span><span class="token punctuation">></span></span>       
-              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>filter</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>blur<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>            
-                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>feGaussianBlur</span> <span class="token attr-name">stdDeviation</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>10<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>        
-              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>filter</span><span class="token punctuation">></span></span>  
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>defs</span><span class="token punctuation">></span></span>    
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>image</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>xxx.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>191<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>265<span class="token punctuation">"</span></span> <span class="token attr-name">filter</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#blur)<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+     <span class="token attr-name">baseProfile</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>full<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>     
+         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>defs</span><span class="token punctuation">&gt;</span></span>       
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>filter</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>blur<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>            
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>feGaussianBlur</span> <span class="token attr-name">stdDeviation</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>10<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>        
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>filter</span><span class="token punctuation">&gt;</span></span>  
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>defs</span><span class="token punctuation">&gt;</span></span>    
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>image</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>xxx.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>191<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>265<span class="token punctuation">"</span></span> <span class="token attr-name">filter</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>url(#blur)<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <p>提供了一个高斯模糊滤镜（模糊半径为10），<img> 标记提供了要模糊的图片，属性 xlink:href 是图片的地址，属性 filter 根据ID 应用了代码定义的滤镜，然后SVG 作为背景图片载入：</p>
 <blockquote>
@@ -1463,7 +1463,7 @@
 
             
                 <span style="margin-left: -20px; display: inline">
-                &nbsp;  <i class="fas fa-chart-area"></i>&nbsp;siteTotalWords:&nbsp;<span  class="white-color">8.2k</span>
+                &nbsp;  <i class="fas fa-chart-area"></i>&nbsp;siteTotalWords:&nbsp;<span  class="white-color">9k</span>
                 <span/>
             
 
@@ -1473,12 +1473,12 @@
             
             
                 <span id="busuanzi_container_site_pv3" style="display: inline">
-                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;siteTotalVisits:&nbsp;<span id="busuanzi_value_site_pv" class="white-color">8.2k</span>
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;siteTotalVisits:&nbsp;<span id="busuanzi_value_site_pv" class="white-color">9k</span>
                 </span>
             
             
                 <span id="busuanzi_container_site_uv3" style="display: inline">
-                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;siteTotalVisitors:&nbsp;<span id="busuanzi_value_site_uv" class="white-color">8.2k</span>
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;siteTotalVisitors:&nbsp;<span id="busuanzi_value_site_uv" class="white-color">9k</span>
                 </span>
             
             <br>
