@@ -3,11 +3,11 @@
   <title>peng的博客</title>
   
   <subtitle>be yourself, be better</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://www.huang06.com/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2022-03-02T03:08:30.069Z</updated>
-  <id>http://example.com/</id>
+  <link href="http://www.huang06.com/"/>
+  <updated>2022-03-02T03:50:45.502Z</updated>
+  <id>http://www.huang06.com/</id>
   
   <author>
     <name>peng</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Leetcode:斐波那契数列</title>
-    <link href="http://example.com/2022/030244399.html"/>
-    <id>http://example.com/2022/030244399.html</id>
-    <published>2022-03-02T05:19:29.000Z</published>
-    <updated>2022-03-02T03:08:30.069Z</updated>
+    <link href="http://www.huang06.com/2022/030255399.html"/>
+    <id>http://www.huang06.com/2022/030255399.html</id>
+    <published>2022-03-02T05:09:29.000Z</published>
+    <updated>2022-03-02T03:50:45.502Z</updated>
     
     
       
@@ -34,67 +34,67 @@
     
     
     
-    <category term="学习" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="http://www.huang06.com/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="http://www.huang06.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>Leetcode537:复数乘法</title>
-    <link href="http://example.com/2022/030144393.html"/>
-    <id>http://example.com/2022/030144393.html</id>
-    <published>2022-03-01T07:19:29.000Z</published>
-    <updated>2022-03-02T02:41:56.344Z</updated>
+    <link href="http://www.huang06.com/2022/030144393.html"/>
+    <id>http://www.huang06.com/2022/030144393.html</id>
+    <published>2022-03-01T07:49:09.000Z</published>
+    <updated>2022-03-02T03:51:24.094Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Leetcode1556-千位分隔数&quot;&gt;&lt;a href=&quot;#Leetcode1556-千位分隔数&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;Leetcode537-复数乘法&quot;&gt;&lt;a href=&quot;#Leetcode537-复数乘法&quot; class=&quot;headerlink&quot; title=&quot;Leetcode537:复数乘法&quot;&gt;&lt;/a&gt;Leetcode537:复数乘法&lt;/h1&gt;&lt;p&gt;题目：&lt;br&gt;复数</summary>
         
       
     
     
     
-    <category term="学习" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="http://www.huang06.com/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="http://www.huang06.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>Leetcode999:可以进一步捕获的棋子数</title>
-    <link href="http://example.com/2022/030144363.html"/>
-    <id>http://example.com/2022/030144363.html</id>
+    <link href="http://www.huang06.com/2022/030144363.html"/>
+    <id>http://www.huang06.com/2022/030144363.html</id>
     <published>2022-03-01T04:19:29.000Z</published>
-    <updated>2022-03-01T07:23:41.240Z</updated>
+    <updated>2022-03-02T03:51:13.076Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Leetcode1556-千位分隔数&quot;&gt;&lt;a href=&quot;#Leetcode1556-千位分隔数&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;Leetcode999-可以进一步捕获的棋子数&quot;&gt;&lt;a href=&quot;#Leetcode999-可以进一步捕获的棋子数&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    <category term="学习" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="http://www.huang06.com/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="http://www.huang06.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>Leetcode1556:千位分隔数</title>
-    <link href="http://example.com/2022/030144343.html"/>
-    <id>http://example.com/2022/030144343.html</id>
+    <link href="http://www.huang06.com/2022/030144343.html"/>
+    <id>http://www.huang06.com/2022/030144343.html</id>
     <published>2022-03-01T03:19:29.000Z</published>
     <updated>2022-03-01T07:09:26.731Z</updated>
     
@@ -109,17 +109,17 @@
     
     
     
-    <category term="学习" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="http://www.huang06.com/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="http://www.huang06.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>前端实时时间</title>
-    <link href="http://example.com/2022/022644788.html"/>
-    <id>http://example.com/2022/022644788.html</id>
+    <link href="http://www.huang06.com/2022/022644788.html"/>
+    <id>http://www.huang06.com/2022/022644788.html</id>
     <published>2022-02-26T04:25:21.000Z</published>
     <updated>2022-02-25T02:28:02.682Z</updated>
     
@@ -135,17 +135,17 @@
     
     
     
-    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://www.huang06.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="time" scheme="http://example.com/tags/time/"/>
+    <category term="time" scheme="http://www.huang06.com/tags/time/"/>
     
   </entry>
   
   <entry>
     <title>前端实现语音识别、语音翻译</title>
-    <link href="http://example.com/2022/022532962.html"/>
-    <id>http://example.com/2022/022532962.html</id>
+    <link href="http://www.huang06.com/2022/022532962.html"/>
+    <id>http://www.huang06.com/2022/022532962.html</id>
     <published>2022-02-25T03:10:29.000Z</published>
     <updated>2022-02-25T02:27:56.784Z</updated>
     
@@ -161,21 +161,21 @@
     
     
     
-    <category term="AI生成" scheme="http://example.com/categories/AI%E7%94%9F%E6%88%90/"/>
+    <category term="AI生成" scheme="http://www.huang06.com/categories/AI%E7%94%9F%E6%88%90/"/>
     
     
-    <category term="语音识别" scheme="http://example.com/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/"/>
+    <category term="语音识别" scheme="http://www.huang06.com/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/"/>
     
-    <category term="语音翻译" scheme="http://example.com/tags/%E8%AF%AD%E9%9F%B3%E7%BF%BB%E8%AF%91/"/>
+    <category term="语音翻译" scheme="http://www.huang06.com/tags/%E8%AF%AD%E9%9F%B3%E7%BF%BB%E8%AF%91/"/>
     
-    <category term="AI生成" scheme="http://example.com/tags/AI%E7%94%9F%E6%88%90/"/>
+    <category term="AI生成" scheme="http://www.huang06.com/tags/AI%E7%94%9F%E6%88%90/"/>
     
   </entry>
   
   <entry>
     <title>前端下载base64格式视频</title>
-    <link href="http://example.com/2022/022428492.html"/>
-    <id>http://example.com/2022/022428492.html</id>
+    <link href="http://www.huang06.com/2022/022428492.html"/>
+    <id>http://www.huang06.com/2022/022428492.html</id>
     <published>2022-02-23T17:13:45.000Z</published>
     <updated>2022-02-25T02:28:07.981Z</updated>
     
@@ -190,21 +190,21 @@
     
     
     
-    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://www.huang06.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="base64" scheme="http://example.com/tags/base64/"/>
+    <category term="base64" scheme="http://www.huang06.com/tags/base64/"/>
     
-    <category term="blob" scheme="http://example.com/tags/blob/"/>
+    <category term="blob" scheme="http://www.huang06.com/tags/blob/"/>
     
-    <category term="下载视频" scheme="http://example.com/tags/%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/"/>
+    <category term="下载视频" scheme="http://www.huang06.com/tags/%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/"/>
     
   </entry>
   
   <entry>
     <title>图片涂鸦</title>
-    <link href="http://example.com/2022/022359956.html"/>
-    <id>http://example.com/2022/022359956.html</id>
+    <link href="http://www.huang06.com/2022/022359956.html"/>
+    <id>http://www.huang06.com/2022/022359956.html</id>
     <published>2022-02-23T03:19:29.000Z</published>
     <updated>2022-03-01T07:32:39.086Z</updated>
     
@@ -219,19 +219,19 @@
     
     
     
-    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://www.huang06.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="canvas" scheme="http://example.com/tags/canvas/"/>
+    <category term="canvas" scheme="http://www.huang06.com/tags/canvas/"/>
     
-    <category term="涂鸦" scheme="http://example.com/tags/%E6%B6%82%E9%B8%A6/"/>
+    <category term="涂鸦" scheme="http://www.huang06.com/tags/%E6%B6%82%E9%B8%A6/"/>
     
   </entry>
   
   <entry>
     <title>Chrome DevTools使用技巧</title>
-    <link href="http://example.com/2022/011428074.html"/>
-    <id>http://example.com/2022/011428074.html</id>
+    <link href="http://www.huang06.com/2022/011428074.html"/>
+    <id>http://www.huang06.com/2022/011428074.html</id>
     <published>2022-01-14T03:19:29.000Z</published>
     <updated>2022-01-17T09:36:52.613Z</updated>
     
@@ -246,19 +246,19 @@
     
     
     
-    <category term="经验总结" scheme="http://example.com/categories/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/"/>
+    <category term="经验总结" scheme="http://www.huang06.com/categories/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/"/>
     
     
-    <category term="Chrome" scheme="http://example.com/tags/Chrome/"/>
+    <category term="Chrome" scheme="http://www.huang06.com/tags/Chrome/"/>
     
-    <category term="Chrome开发技巧" scheme="http://example.com/tags/Chrome%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/"/>
+    <category term="Chrome开发技巧" scheme="http://www.huang06.com/tags/Chrome%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
   <entry>
     <title>vr场景制作</title>
-    <link href="http://example.com/2022/011422321.html"/>
-    <id>http://example.com/2022/011422321.html</id>
+    <link href="http://www.huang06.com/2022/011422321.html"/>
+    <id>http://www.huang06.com/2022/011422321.html</id>
     <published>2022-01-14T03:19:29.000Z</published>
     <updated>2022-01-14T10:11:43.197Z</updated>
     
@@ -273,19 +273,19 @@
     
     
     
-    <category term="vr制作" scheme="http://example.com/categories/vr%E5%88%B6%E4%BD%9C/"/>
+    <category term="vr制作" scheme="http://www.huang06.com/categories/vr%E5%88%B6%E4%BD%9C/"/>
     
     
-    <category term="vr" scheme="http://example.com/tags/vr/"/>
+    <category term="vr" scheme="http://www.huang06.com/tags/vr/"/>
     
-    <category term="3d" scheme="http://example.com/tags/3d/"/>
+    <category term="3d" scheme="http://www.huang06.com/tags/3d/"/>
     
   </entry>
   
   <entry>
     <title>前端处理图片模糊</title>
-    <link href="http://example.com/2022/011436274.html"/>
-    <id>http://example.com/2022/011436274.html</id>
+    <link href="http://www.huang06.com/2022/011436274.html"/>
+    <id>http://www.huang06.com/2022/011436274.html</id>
     <published>2022-01-14T03:19:29.000Z</published>
     <updated>2022-01-17T09:58:17.916Z</updated>
     
@@ -300,21 +300,21 @@
     
     
     
-    <category term="经验总结" scheme="http://example.com/categories/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/"/>
+    <category term="经验总结" scheme="http://www.huang06.com/categories/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/"/>
     
     
-    <category term="css3" scheme="http://example.com/tags/css3/"/>
+    <category term="css3" scheme="http://www.huang06.com/tags/css3/"/>
     
-    <category term="canvas" scheme="http://example.com/tags/canvas/"/>
+    <category term="canvas" scheme="http://www.huang06.com/tags/canvas/"/>
     
-    <category term="svg" scheme="http://example.com/tags/svg/"/>
+    <category term="svg" scheme="http://www.huang06.com/tags/svg/"/>
     
   </entry>
   
   <entry>
     <title>微信公众号开发</title>
-    <link href="http://example.com/2022/011424686.html"/>
-    <id>http://example.com/2022/011424686.html</id>
+    <link href="http://www.huang06.com/2022/011424686.html"/>
+    <id>http://www.huang06.com/2022/011424686.html</id>
     <published>2022-01-14T03:19:29.000Z</published>
     <updated>2022-01-17T08:30:52.828Z</updated>
     
@@ -329,17 +329,17 @@
     
     
     
-    <category term="经验总结" scheme="http://example.com/categories/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/"/>
+    <category term="经验总结" scheme="http://www.huang06.com/categories/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/"/>
     
     
-    <category term="公众号开发" scheme="http://example.com/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E5%BC%80%E5%8F%91/"/>
+    <category term="公众号开发" scheme="http://www.huang06.com/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
   <entry>
     <title>网页性能管理</title>
-    <link href="http://example.com/2022/011224686.html"/>
-    <id>http://example.com/2022/011224686.html</id>
+    <link href="http://www.huang06.com/2022/011224686.html"/>
+    <id>http://www.huang06.com/2022/011224686.html</id>
     <published>2022-01-12T03:19:29.000Z</published>
     <updated>2022-01-14T10:11:43.196Z</updated>
     
@@ -354,12 +354,12 @@
     
     
     
-    <category term="web" scheme="http://example.com/categories/web/"/>
+    <category term="web" scheme="http://www.huang06.com/categories/web/"/>
     
     
-    <category term="web" scheme="http://example.com/tags/web/"/>
+    <category term="web" scheme="http://www.huang06.com/tags/web/"/>
     
-    <category term="网页设计" scheme="http://example.com/tags/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
+    <category term="网页设计" scheme="http://www.huang06.com/tags/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
