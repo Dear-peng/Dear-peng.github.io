@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>nginx——第三方接口</title>
+      <link href="/2022/041532234.html"/>
+      <url>/2022/041532234.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="nginx——第三方接口"><a href="#nginx——第三方接口" class="headerlink" title="nginx——第三方接口"></a>nginx——第三方接口</h1><p>需求：本地请求第三方接口可以，但上传服务器后无法调用</p><h2 id="一、本地调用第三方接口"><a href="#一、本地调用第三方接口" class="headerlink" title="一、本地调用第三方接口"></a>一、本地调用第三方接口</h2><h3 id="proxy解决跨域"><a href="#proxy解决跨域" class="headerlink" title="proxy解决跨域"></a>proxy解决跨域</h3><p>调用的是百度语音的识别和翻译接口(具体前文已说明)</p><pre class=" language-javascript"><code class="language-javascript">   proxyTable<span class="token punctuation">:</span> <span class="token punctuation">{</span>      <span class="token string">'/server_api'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>        target<span class="token punctuation">:</span> <span class="token string">'http://vop.baidu.com'</span><span class="token punctuation">,</span>        secure<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>        pathRewrite<span class="token punctuation">:</span> <span class="token punctuation">{</span>          <span class="token string">'^/server_api'</span> <span class="token punctuation">:</span> <span class="token string">'/server_api'</span>        <span class="token punctuation">}</span><span class="token punctuation">,</span>        changeOrigin<span class="token punctuation">:</span> <span class="token boolean">true</span>      <span class="token punctuation">}</span><span class="token punctuation">,</span>      <span class="token string">'/oauth'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>        target<span class="token punctuation">:</span> <span class="token string">'https://aip.baidubce.com'</span><span class="token punctuation">,</span>        secure<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>        pathRewrite<span class="token punctuation">:</span> <span class="token punctuation">{</span>          <span class="token string">'^/oauth'</span> <span class="token punctuation">:</span> <span class="token string">'/oauth'</span>        <span class="token punctuation">}</span><span class="token punctuation">,</span>        changeOrigin<span class="token punctuation">:</span> <span class="token boolean">true</span>      <span class="token punctuation">}</span><span class="token punctuation">,</span>      <span class="token string">'/api'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>        target<span class="token punctuation">:</span> <span class="token string">'http://api.fanyi.baidu.com'</span><span class="token punctuation">,</span>        secure<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>        pathRewrite<span class="token punctuation">:</span> <span class="token punctuation">{</span>          <span class="token string">'^/api'</span> <span class="token punctuation">:</span> <span class="token string">'/api'</span>        <span class="token punctuation">}</span><span class="token punctuation">,</span>        changeOrigin<span class="token punctuation">:</span> <span class="token boolean">true</span>      <span class="token punctuation">}</span>   <span class="token punctuation">}</span></code></pre><h2 id="二、nginx代理"><a href="#二、nginx代理" class="headerlink" title="二、nginx代理"></a>二、nginx代理</h2><p>本地跑通后上传服务器后发现无法调用这两个接口，需要配置nginx</p><pre class=" language-javascript"><code class="language-javascript">    location <span class="token operator">/</span>oauth<span class="token operator">/</span> <span class="token punctuation">{</span>        proxy_pass  https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>aip<span class="token punctuation">.</span>baidubce<span class="token punctuation">.</span>com<span class="token punctuation">;</span>    <span class="token punctuation">}</span>    location <span class="token operator">/</span>server_api <span class="token punctuation">{</span>        proxy_pass https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>vop<span class="token punctuation">.</span>baidu<span class="token punctuation">.</span>com<span class="token punctuation">;</span>    <span class="token punctuation">}</span>    location <span class="token operator">/</span>api<span class="token operator">/</span> <span class="token punctuation">{</span>        proxy_pass https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>api<span class="token punctuation">.</span>fanyi<span class="token punctuation">.</span>baidu<span class="token punctuation">.</span>com<span class="token punctuation">;</span>    <span class="token punctuation">}</span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI生成 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> proxy </tag>
+            
+            <tag> nginx </tag>
+            
+            <tag> 服务器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Leetcode:斐波那契数列</title>
       <link href="/2022/030255399.html"/>
       <url>/2022/030255399.html</url>

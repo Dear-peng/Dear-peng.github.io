@@ -6,7 +6,7 @@
   <link href="http://huang06.com/atom.xml" rel="self"/>
   
   <link href="http://huang06.com/"/>
-  <updated>2022-03-02T03:50:45.502Z</updated>
+  <updated>2022-04-15T03:48:07.176Z</updated>
   <id>http://huang06.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nginx——第三方接口</title>
+    <link href="http://huang06.com/2022/041532234.html"/>
+    <id>http://huang06.com/2022/041532234.html</id>
+    <published>2022-04-15T03:34:23.000Z</published>
+    <updated>2022-04-15T03:48:07.176Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;nginx——第三方接口&quot;&gt;&lt;a href=&quot;#nginx——第三方接口&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="AI生成" scheme="http://huang06.com/categories/AI%E7%94%9F%E6%88%90/"/>
+    
+    
+    <category term="proxy" scheme="http://huang06.com/tags/proxy/"/>
+    
+    <category term="nginx" scheme="http://huang06.com/tags/nginx/"/>
+    
+    <category term="服务器" scheme="http://huang06.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode:斐波那契数列</title>
